@@ -1,0 +1,27 @@
+10:38:16.342 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:38:16.925 [print]
+10:38:16.932 request:
+1 > GET https://nodejs-qa-training.herokuapp.com/users/999/albums
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NTc5NDk3LjU4LCJleHAiOjE1OTk1ODEyOTcuNTh9.2XZQHoFd2mnqWtbZ-DeiJIITcG6sikj_1BbT_8Vbs1w
+1 > Connection: Keep-Alive
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+
+10:38:17.379 response time in milliseconds: 446,17
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 08 Sep 2020 15:38:18 GMT
+1 < Etag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+[]
+
+10:38:17.380 [print] [
+]
+
+]
+

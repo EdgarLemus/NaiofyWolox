@@ -1,0 +1,48 @@
+01:26:12.908 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+01:26:14.416 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions/invalidate_all
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTc1LjE0NywiZXhwIjoxNTk5NzIwOTc1LjE0N30.mJNZWNhem1MLYr1Drm6UbTD9kbyPE7T2FJ5KEfZKCfs
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+{}
+
+01:26:14.790 response time in milliseconds: 374,12
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Thu, 10 Sep 2020 06:26:15 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+
+01:26:14.791 [print] 
+iff
+1 < X-Powered-By: Express
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /users/sessions/invalidate_all</pre>
+</body>
+</html>
+
+
+18:39:53.949 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 3; El tipo de elemento "meta" debe finalizar por la etiqueta final coincidente "</meta>".
+18:39:53.949 status code was: 404, expected: 200, response time: 669, url: https://nodejs-qa-training.herokuapp.com/users/sessions/invalidate_all, response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /users/sessions/invalidate_all</pre>
+</body>
+</html>
+

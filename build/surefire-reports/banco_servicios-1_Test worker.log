@@ -1,0 +1,21 @@
+21:18:30.655 scenario called at line: 4 by tag: @Post
+21:18:31.314 request:
+1 > GET https://nodejs-qa-training.herokuapp.com/users/sessions
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+
+21:18:31.832 response time in milliseconds: 515,47
+1 < 401
+1 < Connection: keep-alive
+1 < Content-Length: 109
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 08 Sep 2020 02:18:32 GMT
+1 < Etag: W/"6d-LUr73KelZDJF5oKGwC44p6OW3MU"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-08T02:18:32.290Z"}
+

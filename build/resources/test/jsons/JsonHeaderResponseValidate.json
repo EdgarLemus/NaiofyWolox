@@ -1,0 +1,29 @@
+{
+  "Server": [
+    "##string"
+  ],
+  "Connection": [
+    "##string"
+  ],
+  "X-Powered-By": [
+    "##string"
+  ],
+  "Authorization": [
+    "#notnull"
+  ],
+  "Content-Type": [
+    "##string"
+  ],
+  "Content-Length": [
+    "##string"
+  ],
+  "Etag": [
+    "##string"
+  ],
+  "Date": [
+    "##string"
+  ],
+  "Via": [
+    "##string"
+  ]
+}

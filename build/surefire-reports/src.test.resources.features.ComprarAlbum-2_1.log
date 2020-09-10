@@ -1,0 +1,34 @@
+01:25:14.776 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+01:25:15.328 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/albums/999
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE2LjExOSwiZXhwIjoxNTk5NzIwOTE2LjExOX0.Kt9ydUcryyJzIqQM-Ax7oRiiJUqKcJMU2nbZT9WSHFo
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+{}
+
+01:25:15.734 response time in milliseconds: 404,97
+1 < 404
+1 < Connection: keep-alive
+1 < Content-Length: 126
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 10 Sep 2020 06:25:16 GMT
+1 < Etag: W/"7e-9umiflmjYt0RAgzIndC2OLbycTM"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"not_found_error","message":"Request failed with status code 404"}],"timestamp":"2020-09-10T06:25:16.574Z"}
+
+01:25:15.739 [print] {
+  "errors": [
+    {
+      "code": "not_found_error",
+      "message": "Request failed with status code 404"
+    }
+  ],
+  "timestamp": "2020-09-10T06:25:16.574Z"
+}
+
