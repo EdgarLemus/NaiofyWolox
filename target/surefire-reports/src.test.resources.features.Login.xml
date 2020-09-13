@@ -1,5 +1,5 @@
-<testsuite failures="0" name="src/test/resources/features/Login.feature" skipped="0" tests="2" time="1.974627">
-  <testcase classname="src.test.resources.features.Login" name="Loguin Exitoso" time="1.608365">
+<testsuite failures="0" name="src/test/resources/features/Login.feature" skipped="0" tests="2" time="2.424947">
+  <testcase classname="src.test.resources.features.Login" name="Loguin Exitoso" time="2.060252">
     <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/sessions' ........................................ passed
 * def jsonParametroLoguin = ............................................... passed
@@ -14,7 +14,7 @@ And match response == jsonBodyResposeValidate ............................. pass
 And match responseHeaders == jsonHeaderResposeValidate .................... passed
 * print response .......................................................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.resources.features.Login" name="Loguin Exitoso" time="0.366262">
+  <testcase classname="src.test.resources.features.Login" name="Loguin Exitoso" time="0.364695">
     <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/sessions' ........................................ passed
 * def jsonParametroLoguin = ............................................... passed

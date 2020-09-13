@@ -5,6 +5,7 @@ Feature: Listado de albumes
     * def resource = '/albums'
     * def getAutorizationLoguin = call read('Login.feature@FlujoExitoso')
 
+  @FlujoExitoso
   Scenario: Listar albumes
     Given url (endPoint)
     And path (resource)

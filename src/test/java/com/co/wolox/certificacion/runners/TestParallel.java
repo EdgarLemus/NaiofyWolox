@@ -16,14 +16,14 @@ import java.util.List;
 import static org.junit.Assert.assertTrue;
 
 @KarateOptions(features = {
+        "src/test/resources/features/ComprarAlbum.feature",
         "src/test/resources/features/Login.feature",
         "src/test/resources/features/Registro.feature",
         "src/test/resources/features/ListaUsuario.feature",
         "src/test/resources/features/ListaFotosAlbumes.feature",
         "src/test/resources/features/ListaAlbumesComprados.feature",
         "src/test/resources/features/ListaAlbumes.feature",
-        "src/test/resources/features/InvalidarSesion.feature",
-        "src/test/resources/features/ComprarAlbum.feature"
+        "src/test/resources/features/InvalidarSesion.feature"
 },tags = {"~@ignore"})
 public class TestParallel {
 

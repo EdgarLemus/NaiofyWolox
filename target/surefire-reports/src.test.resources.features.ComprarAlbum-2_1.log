@@ -1,8 +1,8 @@
-02:05:55.683 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-02:05:56.236 request:
+15:40:19.487 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:40:20.039 request:
 1 > POST https://nodejs-qa-training.herokuapp.com/albums/999
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzIxNTU3LjA3OCwiZXhwIjoxNTk5NzIzMzU3LjA3OH0.RmEhBbVKT-JeXHU3XjT_NpoVOq6bYvJM4ySPAlOYoDk
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDI5NjIxLjIyOSwiZXhwIjoxNjAwMDMxNDIxLjIyOX0.y-D4qYQpiGK1sK4SOMoad-muSJJI_McgizncuTBNuhc
 1 > Connection: Keep-Alive
 1 > Content-Length: 2
 1 > Content-Type: application/json; charset=UTF-8
@@ -10,25 +10,25 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {}
 
-02:05:56.629 response time in milliseconds: 392,77
+15:40:20.449 response time in milliseconds: 410,10
 1 < 404
 1 < Connection: keep-alive
 1 < Content-Length: 126
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Sep 2020 07:05:57 GMT
-1 < Etag: W/"7e-R8LO+Un3LmRJ7Wb+C2FgmhudWwo"
+1 < Date: Sun, 13 Sep 2020 20:40:21 GMT
+1 < Etag: W/"7e-QEbp11SG8fwdK5dTWEyalqpR6cw"
 1 < Server: Cowboy
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"errors":[{"code":"not_found_error","message":"Request failed with status code 404"}],"timestamp":"2020-09-10T07:05:57.481Z"}
+{"errors":[{"code":"not_found_error","message":"Request failed with status code 404"}],"timestamp":"2020-09-13T20:40:21.662Z"}
 
-02:05:56.631 [print] {
+15:40:20.454 [print] {
   "errors": [
     {
       "code": "not_found_error",
       "message": "Request failed with status code 404"
     }
   ],
-  "timestamp": "2020-09-10T07:05:57.481Z"
+  "timestamp": "2020-09-13T20:40:21.662Z"
 }
 

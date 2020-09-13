@@ -5,27 +5,48 @@ Feature: Registro de usuario
     * def resource = '/users/'
 
   @FlujoExitoso
-  Scenario Outline: Loguin Exitoso
+  Scenario Outline: <Escenario>
     * def jsonParametroRegistroUsuario =
       """
       {
-        "email": "jperez@wolox.com.ar",
-        "password": "candidatoWolox2020",
-        "firstName": "Juan",
-        "lastName": "Perez"
+        "email": "<email>",
+        "password": "<password>",
+        "firstName": "<firstname>",
+        "lastName": "<lastname>"
       }
       """
-    * def f = Java.type('utils.ValidateFieldToField').validateJsonFieldToField(jsonParametroRegistroUsuario)
-    ##* match jsonParametroRegistroUsuario !contains {'firstName': '#? _ = #number'}
-    #* match jsonParametroRegistroUsuario.email contains "@wolox.com.ar"
-    #* match jsonParametroRegistroUsuario !contains {'firstName': '#? _ != ['1','2','3']'}
-
-    #Given url (endPoint)
-    #And path (resource)
-    #And request jsonParametroRegistroUsuario
-    #When method Post
-    #Then status 201
-    #* print response
+    Given url (endPoint)
+    And path (resource)
+    And request jsonParametroRegistroUsuario
+    When method Post
+    Then status <status>
+    * print response
     Examples:
     |Escenario|email|password|firstname|lastname|status|
-    |Registro Exitoso|jose.bermudez@wolox.com.ar|candidatoWolox2020|Jose Antonio|Bermudez|201|
+    |Registro Exitoso|jose.bermuda@wolox.com.ar|candidatoWolox2020|Jose Antonio|Bermudez|201|
+
+  @FlujoFallido
+  Scenario Outline: <Escenario>
+    * def jsonParametroRegistroUsuario =
+      """
+      {
+        "email": "<email>",
+        "password": "<password>",
+        "firstName": "<firstname>",
+        "lastName": "<lastname>"
+      }
+      """
+    Given url (endPoint)
+    And path (resource)
+    And request jsonParametroRegistroUsuario
+    When method Post
+    Then status <status>
+    * def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json')
+    And match response == jsonBodyResposeValidate
+    * print response
+    Examples:
+      |Escenario|email|password|firstname|lastname|status|
+      |Registro Fallido - Usuario existente|jose.bermudez@wolox.com.ar|candidatoWolox2020|Jose Antonio|Bermudez|422|
+      |Registro Fallido - Estructura Password incorrecta - Tamaño|jose.bermudez@wolox.com.ar|candidat|Jose Antonio|Bermudez|422|
+      |Registro Fallido - Estructura Password incorrecta - Formato|jose.bermudez@wolox.com.ar|candidatoWolox|Jose Antonio|Bermudez|422|
+

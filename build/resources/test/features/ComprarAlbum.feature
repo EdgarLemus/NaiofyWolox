@@ -11,7 +11,7 @@ Feature: Comprar Album
       }
       """
     Given url (endPoint)
-    And path 'albums/'+<idAlbum>
+    And path 'albums/<idAlbum>'
     And request jsonParametroComprarAlbum
     And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0]
     When method Post
@@ -19,7 +19,7 @@ Feature: Comprar Album
     * print response
     Examples:
       |Escenario|idAlbum|status|
-      |Comprar album existente|  10   |201|
+      |Comprar album existente|  23   |201|
 
   Scenario Outline: <Escenario>
     * def jsonParametroComprarAlbum =

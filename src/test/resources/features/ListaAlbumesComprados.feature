@@ -4,6 +4,7 @@ Feature: Listado de álbumes comprados
     * def endPoint = 'https://nodejs-qa-training.herokuapp.com/'
     * def getResponseLoguin = call read('Login.feature@FlujoExitoso')
 
+  @FlujoExitoso
   Scenario: Listar albumes comprados por el usuario
     Given url (endPoint)
     And path '/users/'+getResponseLoguin.response.user_id+'/albums'

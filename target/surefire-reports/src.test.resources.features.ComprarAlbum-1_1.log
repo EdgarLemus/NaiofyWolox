@@ -1,8 +1,8 @@
-02:05:55.034 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-02:05:55.642 request:
-1 > POST https://nodejs-qa-training.herokuapp.com/albums/10
+15:40:17.760 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:40:19.416 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/albums/23
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzIxNTU2LjQ2OCwiZXhwIjoxNTk5NzIzMzU2LjQ2OH0.OQHgLk8fbW-iVmmUFtSmUrxDyYhV5d9bboNu7V_SRfI
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDI5NjIwLjU1MywiZXhwIjoxNjAwMDMxNDIwLjU1M30.N-FXxFe1mXpRPaCcDX3IE2OpCvYWrPQxgniOWnKlLmw
 1 > Connection: Keep-Alive
 1 > Content-Length: 2
 1 > Content-Type: application/json; charset=UTF-8
@@ -10,16 +10,20 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {}
 
-02:05:56.009 response time in milliseconds: 365,38
-1 < 401
+15:40:20.432 response time in milliseconds: 1016,17
+1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 109
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Sep 2020 07:05:56 GMT
-1 < Etag: W/"6d-JjDrbMvP38k8rVi4ja5LB6yOJp0"
+1 < Content-Length: 0
+1 < Date: Sun, 13 Sep 2020 20:40:21 GMT
 1 < Server: Cowboy
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-10T07:05:56.858Z"}
 
-02:05:56.010 status code was: 401, expected: 201, response time: 365, url: https://nodejs-qa-training.herokuapp.com/albums/10, response: {"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-10T07:05:56.858Z"}
+15:40:20.433 [print] 
+16sawts"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-13T19:01:04.268Z"}
+
+14:01:03.088 status code was: 401, expected: 201, response time: 369, url: https://nodejs-qa-training.herokuapp.com/albums/19, response: {"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-13T19:01:04.268Z"}

@@ -1,5 +1,5 @@
-02:05:53.323 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-02:05:53.330 request:
+15:40:20.438 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:40:20.441 request:
 1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -9,25 +9,26 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {"email":"correoerroneo@wolox.com.ar","password":"candidatoWolox2020"}
 
-02:05:53.683 response time in milliseconds: 352,62
+15:40:20.801 response time in milliseconds: 359,09
 1 < 401
 1 < Connection: keep-alive
 1 < Content-Length: 130
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Sep 2020 07:05:54 GMT
-1 < Etag: W/"82-jzQbVamvrgxaIEjxXCS92WapBCs"
+1 < Date: Sun, 13 Sep 2020 20:40:22 GMT
+1 < Etag: W/"82-5SmSCQ2d6qiXffSaX7H5od9mVcw"
 1 < Server: Cowboy
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"errors":[{"code":"authentication_error","message":"Unable to authenticate credentials"}],"timestamp":"2020-09-10T07:05:54.538Z"}
+{"errors":[{"code":"authentication_error","message":"Unable to authenticate credentials"}],"timestamp":"2020-09-13T20:40:22.014Z"}
 
-02:05:53.691 [print] {
+15:40:20.803 [print] {
   "errors": [
     {
       "code": "authentication_error",
       "message": "Unable to authenticate credentials"
     }
   ],
-  "timestamp": "2020-09-10T07:05:54.538Z"
+  "timestamp": "2020-09-13T20:40:22.014Z"
 }
+
 

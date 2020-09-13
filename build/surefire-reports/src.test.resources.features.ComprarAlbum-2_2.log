@@ -1,8 +1,8 @@
-01:25:15.746 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-01:25:16.268 request:
+14:02:58.025 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:02:58.582 request:
 1 > POST https://nodejs-qa-training.herokuapp.com/albums/6
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE3LjA5MSwiZXhwIjoxNTk5NzIwOTE3LjA5MX0.zXSL9MrlEbFgctV8SKQqL6cWy9-Iu0P7IaYGlYWiUig
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDIzNzc5Ljc1MSwiZXhwIjoxNjAwMDI1NTc5Ljc1MX0.8NkZRXCipOP8Sv_OtgGgCvztvFk7yg1SDKVN3RGrtsg
 1 > Connection: Keep-Alive
 1 > Content-Length: 2
 1 > Content-Type: application/json; charset=UTF-8
@@ -10,26 +10,26 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {}
 
-01:25:16.671 response time in milliseconds: 402,63
+14:02:59.048 response time in milliseconds: 464,52
 1 < 422
 1 < Connection: keep-alive
 1 < Content-Length: 177
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Sep 2020 06:25:17 GMT
-1 < Etag: W/"b1-kP62fPB1FgOOSgJZk4aUiyKfH+E"
+1 < Date: Sun, 13 Sep 2020 19:03:00 GMT
+1 < Etag: W/"b1-dK/u99ebsCYsGkkWo6SGhLUcgzk"
 1 < Server: Cowboy
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T06:25:17.510Z"}
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-13T19:03:00.228Z"}
 
-01:25:16.674 [print] {
+14:02:59.050 [print] {
   "errors": [
     {
       "code": "entity_already_exists",
       "message": "Unable to create new album. The resource you are trying to create already exists"
     }
   ],
-  "timestamp": "2020-09-10T06:25:17.510Z"
+  "timestamp": "2020-09-13T19:03:00.228Z"
 }
 
  trying to create already exists"}],"timestamp":"2020-09-10T04:25:01.833Z"}

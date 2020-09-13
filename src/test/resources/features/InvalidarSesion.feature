@@ -5,6 +5,7 @@ Feature: Invalidar Sesiones
     * def resource = 'users/sessions/invalidate_all'
     * def getResponseLoguin = call read('Login.feature@FlujoExitoso')
 
+  @FlujoExitoso
   Scenario: Invalidar sesion
     * def jsonParametroInvalidarSesion =
       """

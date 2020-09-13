@@ -5,7 +5,7 @@ Feature: Listado de fotos de un álbum
     * def getResponseLoguin = call read('Login.feature@FlujoExitoso')
     * def getResponseListaAlbumes = call read('ListaAlbumes.feature')
 
-  Scenario: Foto de album existente
+  Scenario: Foto de album
     Given url (endPoint)
     And path '/albums/getResponseListaAlbumes.response[3].id/photos'
     And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0]

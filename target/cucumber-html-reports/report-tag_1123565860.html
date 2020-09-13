@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>AutomatizacionServicios</td>
-            <td>10 Sep 2020, 02:05</td>
+            <td>13 Sep 2020, 15:40</td>
     </tr>
   </tbody>
 </table>
@@ -128,18 +128,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@FlujoFallido</td>
-          <td      class="passed"    >9</td>
+          <td      class="passed"    >36</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">9</td>
+          <td class="total">36</td>
 
-          <td  class="passed"    >1</td>
+          <td  class="passed"    >4</td>
           <td >0</td>
-          <td class="total">1</td>
+          <td class="total">4</td>
 
-          <td class="duration" data-value="365021500">0.365</td>
+          <td class="duration" data-value="1707801600">1.707</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -182,7 +182,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.365</span>
+  <span class="lead-duration duration">0.364</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -291,7 +291,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">path (resource)</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -345,7 +345,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
   
-  <span class="lead-duration duration">0.355</span>
+  <span class="lead-duration duration">0.361</span>
 
 </div>
 
@@ -363,7 +363,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>02:05:53.330 request:
+        <pre>15:40:20.441 request:
 1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -373,17 +373,17 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {&quot;email&quot;:&quot;correoerroneo@wolox.com.ar&quot;,&quot;password&quot;:&quot;candidatoWolox2020&quot;}
 
-02:05:53.683 response time in milliseconds: 352,62
+15:40:20.801 response time in milliseconds: 359,09
 1 &lt; 401
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 130
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 07:05:54 GMT
-1 &lt; Etag: W/&quot;82-jzQbVamvrgxaIEjxXCS92WapBCs&quot;
+1 &lt; Date: Sun, 13 Sep 2020 20:40:22 GMT
+1 &lt; Etag: W/&quot;82-5SmSCQ2d6qiXffSaX7H5od9mVcw&quot;
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{&quot;errors&quot;:[{&quot;code&quot;:&quot;authentication_error&quot;,&quot;message&quot;:&quot;Unable to authenticate credentials&quot;}],&quot;timestamp&quot;:&quot;2020-09-10T07:05:54.538Z&quot;}</pre>
+{&quot;errors&quot;:[{&quot;code&quot;:&quot;authentication_error&quot;,&quot;message&quot;:&quot;Unable to authenticate credentials&quot;}],&quot;timestamp&quot;:&quot;2020-09-13T20:40:22.014Z&quot;}</pre>
       </div>
     </div>
   </div>
@@ -429,7 +429,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json')</span>
   
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -501,14 +501,1112 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>02:05:53.691 [print] {
+        <pre>15:40:20.803 [print] {
   &quot;errors&quot;: [
     {
       &quot;code&quot;: &quot;authentication_error&quot;,
       &quot;message&quot;: &quot;Unable to authenticate credentials&quot;
     }
   ],
-  &quot;timestamp&quot;: &quot;2020-09-10T07:05:54.538Z&quot;
+  &quot;timestamp&quot;: &quot;2020-09-13T20:40:22.014Z&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_7_700882256.html">src/test/resources/features/Registro.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1123565860.html">@FlujoFallido</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.489</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Registro Fallido - Usuario existente</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonParametroRegistroUsuario =</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>{
+  &quot;email&quot;: &quot;jose.bermudez@wolox.com.ar&quot;,
+  &quot;password&quot;: &quot;candidatoWolox2020&quot;,
+  &quot;firstName&quot;: &quot;Jose Antonio&quot;,
+  &quot;lastName&quot;: &quot;Bermudez&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url (endPoint)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path (resource)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonParametroRegistroUsuario</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+  
+  <span class="lead-duration duration">0.485</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>15:40:20.462 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 119
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+{&quot;email&quot;:&quot;jose.bermudez@wolox.com.ar&quot;,&quot;password&quot;:&quot;candidatoWolox2020&quot;,&quot;firstName&quot;:&quot;Jose Antonio&quot;,&quot;lastName&quot;:&quot;Bermudez&quot;}
+
+15:40:20.947 response time in milliseconds: 483,45
+1 &lt; 422
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 176
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 13 Sep 2020 20:40:22 GMT
+1 &lt; Etag: W/&quot;b0-0c4ZmnPTLUB1TopkkZ9B+O6SBlo&quot;
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{&quot;errors&quot;:[{&quot;code&quot;:&quot;entity_already_exists&quot;,&quot;message&quot;:&quot;Unable to create new user. The resource you are trying to create already exists&quot;}],&quot;timestamp&quot;:&quot;2020-09-13T20:40:22.159Z&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 422</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == jsonBodyResposeValidate</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>15:40:20.950 [print] {
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;entity_already_exists&quot;,
+      &quot;message&quot;: &quot;Unable to create new user. The resource you are trying to create already exists&quot;
+    }
+  ],
+  &quot;timestamp&quot;: &quot;2020-09-13T20:40:22.159Z&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_7_700882256.html">src/test/resources/features/Registro.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1123565860.html">@FlujoFallido</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.358</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Registro Fallido - Estructura Password incorrecta - Tama&ntilde;o</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonParametroRegistroUsuario =</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>{
+  &quot;email&quot;: &quot;jose.bermudez@wolox.com.ar&quot;,
+  &quot;password&quot;: &quot;candidat&quot;,
+  &quot;firstName&quot;: &quot;Jose Antonio&quot;,
+  &quot;lastName&quot;: &quot;Bermudez&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url (endPoint)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path (resource)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonParametroRegistroUsuario</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+  
+  <span class="lead-duration duration">0.355</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>15:40:20.812 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 109
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+{&quot;email&quot;:&quot;jose.bermudez@wolox.com.ar&quot;,&quot;password&quot;:&quot;candidat&quot;,&quot;firstName&quot;:&quot;Jose Antonio&quot;,&quot;lastName&quot;:&quot;Bermudez&quot;}
+
+15:40:21.166 response time in milliseconds: 353,16
+1 &lt; 422
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 115
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 13 Sep 2020 20:40:22 GMT
+1 &lt; Etag: W/&quot;73-c2/yBVoTChjNxdRl2v1qYDHpYjM&quot;
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{&quot;errors&quot;:[{&quot;code&quot;:&quot;validation_error&quot;,&quot;message&quot;:&quot;Password format invalid&quot;}],&quot;timestamp&quot;:&quot;2020-09-13T20:40:22.378Z&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 422</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == jsonBodyResposeValidate</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>15:40:21.168 [print] {
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;validation_error&quot;,
+      &quot;message&quot;: &quot;Password format invalid&quot;
+    }
+  ],
+  &quot;timestamp&quot;: &quot;2020-09-13T20:40:22.378Z&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_7_700882256.html">src/test/resources/features/Registro.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1123565860.html">@FlujoFallido</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.495</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Registro Fallido - Estructura Password incorrecta - Formato</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonParametroRegistroUsuario =</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>{
+  &quot;email&quot;: &quot;jose.bermudez@wolox.com.ar&quot;,
+  &quot;password&quot;: &quot;candidatoWolox&quot;,
+  &quot;firstName&quot;: &quot;Jose Antonio&quot;,
+  &quot;lastName&quot;: &quot;Bermudez&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url (endPoint)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path (resource)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonParametroRegistroUsuario</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+  
+  <span class="lead-duration duration">0.490</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>15:40:20.977 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 115
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+{&quot;email&quot;:&quot;jose.bermudez@wolox.com.ar&quot;,&quot;password&quot;:&quot;candidatoWolox&quot;,&quot;firstName&quot;:&quot;Jose Antonio&quot;,&quot;lastName&quot;:&quot;Bermudez&quot;}
+
+15:40:21.466 response time in milliseconds: 487,92
+1 &lt; 422
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 115
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 13 Sep 2020 20:40:22 GMT
+1 &lt; Etag: W/&quot;73-MgTvGRIZmx8rbtJlClBkf5kq784&quot;
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{&quot;errors&quot;:[{&quot;code&quot;:&quot;validation_error&quot;,&quot;message&quot;:&quot;Password format invalid&quot;}],&quot;timestamp&quot;:&quot;2020-09-13T20:40:22.676Z&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 422</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == jsonBodyResposeValidate</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>15:40:21.469 [print] {
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;validation_error&quot;,
+      &quot;message&quot;: &quot;Password format invalid&quot;
+    }
+  ],
+  &quot;timestamp&quot;: &quot;2020-09-13T20:40:22.676Z&quot;
 }</pre>
       </div>
     </div>

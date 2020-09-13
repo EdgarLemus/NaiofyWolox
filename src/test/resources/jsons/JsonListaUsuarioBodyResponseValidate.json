@@ -1,11 +1,11 @@
 {
-  "page": "#(usuarios)",
+"page": "#[]",
 "count": "#number",
 "limit": "#number",
 "offset": "#number",
 "total_pages": "#number",
 "total_count": "#number",
-"previous_page": "#number",
+"previous_page": "##number",
 "current_page": "#number",
 "next_page": "#number",
 "previous_page_link": "##string",

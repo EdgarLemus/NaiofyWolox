@@ -1,0 +1,33 @@
+13:46:12.002 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+13:46:12.007 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/users/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 119
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+{"email":"jose.bermudez@wolox.com.ar","password":"candidatoWolox2020","firstName":"Jose Antonio","lastName":"Bermudez"}
+
+13:46:12.616 response time in milliseconds: 607,73
+1 < 422
+1 < Connection: keep-alive
+1 < Content-Length: 176
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Sep 2020 18:46:13 GMT
+1 < Etag: W/"b0-p1jtlGQDLBZAOgjrMETvtUWVL7I"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-13T18:46:13.791Z"}
+
+13:46:12.631 [print] {
+  "errors": [
+    {
+      "code": "entity_already_exists",
+      "message": "Unable to create new user. The resource you are trying to create already exists"
+    }
+  ],
+  "timestamp": "2020-09-13T18:46:13.791Z"
+}
+

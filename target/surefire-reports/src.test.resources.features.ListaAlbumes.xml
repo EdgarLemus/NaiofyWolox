@@ -1,5 +1,5 @@
-<testsuite failures="0" name="src/test/resources/features/ListaAlbumes.feature" skipped="0" tests="1" time="0.984377">
-  <testcase classname="src.test.resources.features.ListaAlbumes" name="Listar albumes" time="0.984377">
+<testsuite failures="0" name="src/test/resources/features/ListaAlbumes.feature" skipped="0" tests="1" time="0.937253">
+  <testcase classname="src.test.resources.features.ListaAlbumes" name="Listar albumes" time="0.937253">
     <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/albums' ................................................ passed
 * def getAutorizationLoguin = call read('Login.feature@FlujoExitoso') ..... passed

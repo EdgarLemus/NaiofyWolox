@@ -1,35 +1,25 @@
-<testsuite failures="5" name="src/test/resources/features/Registro.feature" skipped="0" tests="5" time="4.198019">
-  <testcase classname="src.test.resources.features.Registro" name="Loguin Exitoso" time="1.594129">
-    <failure message="Registro.feature:22 - status code was: 422, expected: 201, response time: 935, url: https://nodejs-qa-training.herokuapp.com/users/, response: {&quot;errors&quot;:[{&quot;code&quot;:&quot;entity_already_exists&quot;,&quot;message&quot;:&quot;Unable to create new user. The resource you are trying to create already exists&quot;}],&quot;timestamp&quot;:&quot;2020-09-10T07:05:53.478Z&quot;}">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+<testsuite failures="0" name="src/test/resources/features/Registro.feature" skipped="0" tests="4" time="3.052505">
+  <testcase classname="src.test.resources.features.Registro" name="Registro Exitoso" time="1.707807">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
 Given url (endPoint) ...................................................... passed
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 935, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:53.478Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped</failure>
+Then status 201 ........................................................... passed
+* print response .......................................................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.resources.features.Registro" name="Loguin Exitoso" time="0.663035">
-    <failure message="Registro.feature:22 - status code was: 422, expected: 201, response time: 657, url: https://nodejs-qa-training.herokuapp.com/users/, response: {&quot;errors&quot;:[{&quot;code&quot;:&quot;entity_already_exists&quot;,&quot;message&quot;:&quot;Unable to create new user. The resource you are trying to create already exists&quot;}],&quot;timestamp&quot;:&quot;2020-09-10T07:05:54.161Z&quot;}">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+  <testcase classname="src.test.resources.features.Registro" name="Registro Fallido - Usuario existente" time="0.489818">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
 Given url (endPoint) ...................................................... passed
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 935, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:53.478Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
 * def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
@@ -37,29 +27,21 @@ Given url (endPoint) ...................................................... pass
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 657, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.161Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped</failure>
+Then status 422 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* print response .......................................................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.resources.features.Registro" name="Loguin Exitoso" time="0.661717">
-    <failure message="Registro.feature:22 - status code was: 422, expected: 201, response time: 650, url: https://nodejs-qa-training.herokuapp.com/users/, response: {&quot;errors&quot;:[{&quot;code&quot;:&quot;entity_already_exists&quot;,&quot;message&quot;:&quot;Unable to create new user. The resource you are trying to create already exists&quot;}],&quot;timestamp&quot;:&quot;2020-09-10T07:05:54.165Z&quot;}">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+  <testcase classname="src.test.resources.features.Registro" name="Registro Fallido - Estructura Password incorrecta - Tamaño" time="0.358827">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
 Given url (endPoint) ...................................................... passed
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 935, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:53.478Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
 * def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
@@ -67,13 +49,10 @@ Given url (endPoint) ...................................................... pass
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 657, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.161Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
+Then status 422 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* print response .......................................................... passed
 * def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
@@ -81,29 +60,21 @@ Given url (endPoint) ...................................................... pass
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 650, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.165Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped</failure>
+Then status 422 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* print response .......................................................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.resources.features.Registro" name="Loguin Exitoso" time="0.644392">
-    <failure message="Registro.feature:22 - status code was: 422, expected: 201, response time: 638, url: https://nodejs-qa-training.herokuapp.com/users/, response: {&quot;errors&quot;:[{&quot;code&quot;:&quot;entity_already_exists&quot;,&quot;message&quot;:&quot;Unable to create new user. The resource you are trying to create already exists&quot;}],&quot;timestamp&quot;:&quot;2020-09-10T07:05:54.826Z&quot;}">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+  <testcase classname="src.test.resources.features.Registro" name="Registro Fallido - Estructura Password incorrecta - Formato" time="0.496053">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
 Given url (endPoint) ...................................................... passed
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 935, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:53.478Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
 * def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
@@ -111,13 +82,10 @@ Given url (endPoint) ...................................................... pass
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 657, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.161Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
+Then status 422 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* print response .......................................................... passed
 * def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
@@ -125,13 +93,10 @@ Given url (endPoint) ...................................................... pass
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 650, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.165Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
+Then status 422 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* print response .......................................................... passed
 * def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def resource = '/users/' ................................................ passed
 * def jsonParametroRegistroUsuario = ...................................... passed
@@ -139,84 +104,9 @@ Given url (endPoint) ...................................................... pass
 And path (resource) ....................................................... passed
 And request jsonParametroRegistroUsuario .................................. passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 638, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.826Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped</failure>
-  </testcase>
-  <testcase classname="src.test.resources.features.Registro" name="Loguin Exitoso" time="0.634746">
-    <failure message="Registro.feature:22 - status code was: 422, expected: 201, response time: 630, url: https://nodejs-qa-training.herokuapp.com/users/, response: {&quot;errors&quot;:[{&quot;code&quot;:&quot;entity_already_exists&quot;,&quot;message&quot;:&quot;Unable to create new user. The resource you are trying to create already exists&quot;}],&quot;timestamp&quot;:&quot;2020-09-10T07:05:54.824Z&quot;}">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
-* def resource = '/users/' ................................................ passed
-* def jsonParametroRegistroUsuario = ...................................... passed
-Given url (endPoint) ...................................................... passed
-And path (resource) ....................................................... passed
-And request jsonParametroRegistroUsuario .................................. passed
-When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 935, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:53.478Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
-* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
-* def resource = '/users/' ................................................ passed
-* def jsonParametroRegistroUsuario = ...................................... passed
-Given url (endPoint) ...................................................... passed
-And path (resource) ....................................................... passed
-And request jsonParametroRegistroUsuario .................................. passed
-When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 657, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.161Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
-* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
-* def resource = '/users/' ................................................ passed
-* def jsonParametroRegistroUsuario = ...................................... passed
-Given url (endPoint) ...................................................... passed
-And path (resource) ....................................................... passed
-And request jsonParametroRegistroUsuario .................................. passed
-When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 650, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.165Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
-* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
-* def resource = '/users/' ................................................ passed
-* def jsonParametroRegistroUsuario = ...................................... passed
-Given url (endPoint) ...................................................... passed
-And path (resource) ....................................................... passed
-And request jsonParametroRegistroUsuario .................................. passed
-When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 638, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.826Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped
-* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
-* def resource = '/users/' ................................................ passed
-* def jsonParametroRegistroUsuario = ...................................... passed
-Given url (endPoint) ...................................................... passed
-And path (resource) ....................................................... passed
-And request jsonParametroRegistroUsuario .................................. passed
-When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: Registro.feature:22 - status code was: 422, expected: 201, response time: 630, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:54.824Z"}&#13;
-	at ✽.Then status 201 (Registro.feature:22)&#13;
-
-* print response .......................................................... skipped</failure>
+Then status 422 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* print response .......................................................... passed</system-out>
   </testcase>
 </testsuite>

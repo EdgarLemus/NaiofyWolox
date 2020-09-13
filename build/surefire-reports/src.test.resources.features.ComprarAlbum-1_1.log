@@ -1,8 +1,8 @@
-01:25:12.717 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-01:25:14.290 request:
-1 > POST https://nodejs-qa-training.herokuapp.com/albums/10
+14:02:54.834 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:02:56.462 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/albums/19
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE1LjA2NCwiZXhwIjoxNTk5NzIwOTE1LjA2NH0.quTIZruLZZGKAbMfAaEmCJ5hgpa2oCjMgMrQW1wt1p0
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDIzNzc3LjU3MiwiZXhwIjoxNjAwMDI1NTc3LjU3Mn0.Ry0KE_f_1o5uVziJ1XaPRpg4uEyOoM4dr7K4FsKDqKo
 1 > Connection: Keep-Alive
 1 > Content-Length: 2
 1 > Content-Type: application/json; charset=UTF-8
@@ -10,13 +10,17 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {}
 
-01:25:14.765 response time in milliseconds: 473,88
-1 < 422
+14:02:56.936 response time in milliseconds: 473,02
+1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 177
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Sep 2020 06:25:15 GMT
-1 < Etag: W/"b1-GTBhEGCPP3F0c8kK/dP50SVCqqc"
+1 < Content-Length: 0
+1 < Date: Sun, 13 Sep 2020 19:02:58 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+
+14:02:56.936 [print] 
+50SVCqqc"
 1 < Server: Cowboy
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express

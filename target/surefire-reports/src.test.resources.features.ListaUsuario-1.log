@@ -1,32 +1,38 @@
-02:05:51.028 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-02:05:52.678 request:
+15:40:20.954 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:40:21.485 request:
 1 > GET https://nodejs-qa-training.herokuapp.com/users
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzIxNTUzLjQ3NiwiZXhwIjoxNTk5NzIzMzUzLjQ3Nn0.EbsvxM_7Ou07w1ARXU2erw0Fhwt5XWrz-CHhOjJMr8w
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDI5NjIyLjY3OCwiZXhwIjoxNjAwMDMxNDIyLjY3OH0.IabzNfht1sVJhbTXq0ZsMN9Zb65enWdiNf05UpxC-h8
 1 > Connection: Keep-Alive
 1 > Host: nodejs-qa-training.herokuapp.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 
-02:05:53.316 response time in milliseconds: 636,55
+15:40:22.016 response time in milliseconds: 528,93
 1 < 200
 1 < Connection: keep-alive
-1 < Content-Length: 678
+1 < Content-Length: 1031
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Sep 2020 07:05:54 GMT
-1 < Etag: W/"2a6-PjdUqdvvpKN7SW7H8N1r6FwyxH8"
+1 < Date: Sun, 13 Sep 2020 20:40:23 GMT
+1 < Etag: W/"407-Vqr/s1v2BQht4R1fdVbyoAA9D0Q"
 1 < Server: Cowboy
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"total_count":6,"count":6,"total_pages":1,"limit":10,"offset":0,"current_page":1,"page":[{"first_name":"regular","last_name":"regular","email":"regular@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Perez","email":"jperez@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Per2ez","email":"jperwez@wolox.com.ar","role":"regular"},{"first_name":"Ju4an","last_name":"Per2ez","email":"jperwetz@wolox.com.ar","role":"regular"},{"first_name":"45543","last_name":"Per2ez","email":"jpterwetz@wolox.com.ar","role":"regular"},{"first_name":"admin","last_name":"admin","email":"admin@wolox.com.ar","role":"admin"}],"previous_page":null,"next_page":null}
+{"total_count":33,"count":10,"total_pages":4,"limit":10,"offset":0,"current_page":1,"page":[{"first_name":"Hernan","last_name":"Garcia","email":"h6@wolox.com.ar","role":"regular"},{"first_name":"regular","last_name":"regular","email":"regular@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Perez","email":"jperez@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h7@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Per2ez","email":"jperwez@wolox.com.ar","role":"regular"},{"first_name":"Ju4an","last_name":"Per2ez","email":"jperwetz@wolox.com.ar","role":"regular"},{"first_name":"45543","last_name":"Per2ez","email":"jpterwetz@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h14@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h78@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h@wolox.com.ar","role":"regular"}],"previous_page":null,"next_page":2}
 
-02:05:53.325 [print] {
-  "total_count": 6,
-  "count": 6,
-  "total_pages": 1,
+15:40:22.023 [print] {
+  "total_count": 33,
+  "count": 10,
+  "total_pages": 4,
   "limit": 10,
   "offset": 0,
   "current_page": 1,
   "page": [
+    {
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h6@wolox.com.ar",
+      "role": "regular"
+    },
     {
       "first_name": "regular",
       "last_name": "regular",
@@ -37,6 +43,12 @@
       "first_name": "Juan",
       "last_name": "Perez",
       "email": "jperez@wolox.com.ar",
+      "role": "regular"
+    },
+    {
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h7@wolox.com.ar",
       "role": "regular"
     },
     {
@@ -58,14 +70,27 @@
       "role": "regular"
     },
     {
-      "first_name": "admin",
-      "last_name": "admin",
-      "email": "admin@wolox.com.ar",
-      "role": "admin"
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h14@wolox.com.ar",
+      "role": "regular"
+    },
+    {
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h78@wolox.com.ar",
+      "role": "regular"
+    },
+    {
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h@wolox.com.ar",
+      "role": "regular"
     }
   ],
   "previous_page": null,
-  "next_page": null
+  "next_page": 2
 }
 
-01:59:40.615 assertion failed: path: $.page, actual: [{"first_name":"regular","last_name":"regular","email":"regular@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Perez","email":"jperez@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Per2ez","email":"jperwez@wolox.com.ar","role":"regular"},{"first_name":"Ju4an","last_name":"Per2ez","email":"jperwetz@wolox.com.ar","role":"regular"},{"first_name":"45543","last_name":"Per2ez","email":"jpterwetz@wolox.com.ar","role":"regular"},{"first_name":"admin","last_name":"admin","email":"admin@wolox.com.ar","role":"admin"}], expected: [{"first_name":"#string","last_name":"#string","email":"#string","role":"#string"},{"first_name":"#string","last_name":"#string","email":"#string","role":"#string"},{"first_name":"#string","last_name":"#string","email":"#string","role":"#string"}], reason: actual and expected arrays are not the same size - 6:3
+
+al and expected arrays are not the same size - 6:3

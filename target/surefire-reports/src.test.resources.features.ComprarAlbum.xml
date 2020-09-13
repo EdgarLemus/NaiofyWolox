@@ -1,37 +1,27 @@
-<testsuite failures="1" name="src/test/resources/features/ComprarAlbum.feature" skipped="0" tests="3" time="2.903723">
-  <testcase classname="src.test.resources.features.ComprarAlbum" name="Comprar album existente" time="0.974211">
-    <failure message="ComprarAlbum.feature:18 - status code was: 401, expected: 201, response time: 365, url: https://nodejs-qa-training.herokuapp.com/albums/10, response: {&quot;errors&quot;:[{&quot;code&quot;:&quot;authentication_error&quot;,&quot;message&quot;:&quot;Invalid token&quot;}],&quot;timestamp&quot;:&quot;2020-09-10T07:05:56.858Z&quot;}">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
-* def getResponseLoguin = call read('Login.feature@FlujoExitoso') ......... passed
-* def jsonParametroComprarAlbum = ......................................... passed
-Given url (endPoint) ...................................................... passed
-And path 'albums/'+10 ..................................................... passed
-And request jsonParametroComprarAlbum ..................................... passed
-And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0] . passed
-When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ComprarAlbum.feature:18 - status code was: 401, expected: 201, response time: 365, url: https://nodejs-qa-training.herokuapp.com/albums/10, response: {"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-10T07:05:56.858Z"}&#13;
-	at ✽.Then status 201 (ComprarAlbum.feature:18)&#13;
-
-* print response .......................................................... skipped</failure>
-  </testcase>
-  <testcase classname="src.test.resources.features.ComprarAlbum" name="Comprar album no existente" time="0.947192">
+<testsuite failures="0" name="src/test/resources/features/ComprarAlbum.feature" skipped="0" tests="3" time="4.748379">
+  <testcase classname="src.test.resources.features.ComprarAlbum" name="Comprar album existente" time="2.658292">
     <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def getResponseLoguin = call read('Login.feature@FlujoExitoso') ......... passed
 * def jsonParametroComprarAlbum = ......................................... passed
 Given url (endPoint) ...................................................... passed
-And path 'albums/'+10 ..................................................... passed
+And path 'albums/23' ...................................................... passed
 And request jsonParametroComprarAlbum ..................................... passed
 And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0] . passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ComprarAlbum.feature:18 - status code was: 401, expected: 201, response time: 365, url: https://nodejs-qa-training.herokuapp.com/albums/10, response: {"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-10T07:05:56.858Z"}&#13;
-	at ✽.Then status 201 (ComprarAlbum.feature:18)&#13;
-
-* print response .......................................................... skipped
+Then status 201 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.ComprarAlbum" name="Comprar album no existente" time="0.96524">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+* def getResponseLoguin = call read('Login.feature@FlujoExitoso') ......... passed
+* def jsonParametroComprarAlbum = ......................................... passed
+Given url (endPoint) ...................................................... passed
+And path 'albums/23' ...................................................... passed
+And request jsonParametroComprarAlbum ..................................... passed
+And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0] . passed
+When method Post .......................................................... passed
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
 * def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def getResponseLoguin = call read('Login.feature@FlujoExitoso') ......... passed
 * def jsonParametroComprarAlbum = ......................................... passed
@@ -45,22 +35,17 @@ Then status 404 ........................................................... pass
 And match response == jsonBodyResposeValidate ............................. passed
 * print response .......................................................... passed</system-out>
   </testcase>
-  <testcase classname="src.test.resources.features.ComprarAlbum" name="Comprar album que ya fue comprado" time="0.98232">
+  <testcase classname="src.test.resources.features.ComprarAlbum" name="Comprar album que ya fue comprado" time="1.124847">
     <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def getResponseLoguin = call read('Login.feature@FlujoExitoso') ......... passed
 * def jsonParametroComprarAlbum = ......................................... passed
 Given url (endPoint) ...................................................... passed
-And path 'albums/'+10 ..................................................... passed
+And path 'albums/23' ...................................................... passed
 And request jsonParametroComprarAlbum ..................................... passed
 And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0] . passed
 When method Post .......................................................... passed
-Then status 201 ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ComprarAlbum.feature:18 - status code was: 401, expected: 201, response time: 365, url: https://nodejs-qa-training.herokuapp.com/albums/10, response: {"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2020-09-10T07:05:56.858Z"}&#13;
-	at ✽.Then status 201 (ComprarAlbum.feature:18)&#13;
-
-* print response .......................................................... skipped
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
 * def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
 * def getResponseLoguin = call read('Login.feature@FlujoExitoso') ......... passed
 * def jsonParametroComprarAlbum = ......................................... passed

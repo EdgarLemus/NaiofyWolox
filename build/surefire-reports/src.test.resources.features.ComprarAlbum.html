@@ -172,30 +172,30 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</div>
-<div class="time-cell passed">0.003792</div>
+<div class="time-cell passed">0.003401</div>
 </div>
-<div class="preformatted">01:25:12.717 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">14:02:54.834 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* def getResponseLoguin = call read('Login.feature@FlujoExitoso')</div>
-<div class="time-cell passed">1.52797</div>
+<div class="time-cell passed">1.580937</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Login.feature</div>
-<div class="time-cell passed">1.504961</div>
+<div class="time-cell passed">1.55495</div>
 </div>
 <div class="scenario-steps-nested">
 <div class="step-row">
 <div class="step-cell passed">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</div>
-<div class="time-cell passed">0.004415</div>
+<div class="time-cell passed">0.003799</div>
 </div>
-<div class="preformatted">01:25:12.750 scenario called at line: 8 by tag: @FlujoExitoso</div>
+<div class="preformatted">14:02:54.867 scenario called at line: 8 by tag: @FlujoExitoso</div>
 <div class="step-row">
 <div class="step-cell passed">* def resource = '/users/sessions'</div>
-<div class="time-cell passed">0.002914</div>
+<div class="time-cell passed">0.001797</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonParametroLoguin =</div>
-<div class="time-cell passed">0.053858</div>
+<div class="time-cell passed">0.051273</div>
 </div>
 <div class="preformatted">{
   email: 'admin@wolox.com.ar',
@@ -203,21 +203,21 @@
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given url (endPoint)</div>
-<div class="time-cell passed">0.002448</div>
+<div class="time-cell passed">0.002342</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And path (resource)</div>
-<div class="time-cell passed">0.002168</div>
+<div class="time-cell passed">0.00209</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request jsonParametroLoguin</div>
-<div class="time-cell passed">0.000048</div>
+<div class="time-cell passed">0.000026</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Post</div>
-<div class="time-cell passed">1.425517</div>
+<div class="time-cell passed">1.476804</div>
 </div>
-<div class="preformatted">01:25:13.403 request:
+<div class="preformatted">14:02:55.535 request:
 1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -227,77 +227,77 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {"email":"admin@wolox.com.ar","password":"candidatoWolox2020"}
 
-01:25:14.242 response time in milliseconds: 836,24
+14:02:56.406 response time in milliseconds: 868,06
 1 &lt; 200
-1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE1LjA2NCwiZXhwIjoxNTk5NzIwOTE1LjA2NH0.quTIZruLZZGKAbMfAaEmCJ5hgpa2oCjMgMrQW1wt1p0
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDIzNzc3LjU3MiwiZXhwIjoxNjAwMDI1NTc3LjU3Mn0.Ry0KE_f_1o5uVziJ1XaPRpg4uEyOoM4dr7K4FsKDqKo
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 51
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 06:25:15 GMT
-1 &lt; Etag: W/"33-LABHbFjYrp5FlrGzvMABoo524Q4"
+1 &lt; Date: Sun, 13 Sep 2020 19:02:57 GMT
+1 &lt; Etag: W/"33-EP2DbROD5i+nq7rNxOZ3zcuX29U"
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{"user_id":146,"token_expires_at":"1599720915.064"}</div>
+{"user_id":146,"token_expires_at":"1600025577.572"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
 <div class="time-cell passed">0.000013</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonLoguinBodyResponseValidate.json')</div>
-<div class="time-cell passed">0.004946</div>
+<div class="time-cell passed">0.00806</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match response == jsonBodyResposeValidate</div>
-<div class="time-cell passed">0.002325</div>
+<div class="time-cell passed">0.003015</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonHeaderResposeValidate = read('../jsons/JsonHeaderResponseValidate.json')</div>
-<div class="time-cell passed">0.004869</div>
+<div class="time-cell passed">0.004834</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match responseHeaders == jsonHeaderResposeValidate</div>
-<div class="time-cell passed">0.000505</div>
+<div class="time-cell passed">0.000276</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print response</div>
-<div class="time-cell passed">0.000934</div>
+<div class="time-cell passed">0.000622</div>
 </div>
-<div class="preformatted">01:25:14.257 [print] {
+<div class="preformatted">14:02:56.425 [print] {
   "user_id": 146,
-  "token_expires_at": "1599720915.064"
+  "token_expires_at": "1600025577.572"
 }</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonParametroComprarAlbum =</div>
-<div class="time-cell passed">0.000217</div>
+<div class="time-cell passed">0.00027</div>
 </div>
 <div class="preformatted">{
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given url (endPoint)</div>
-<div class="time-cell passed">0.000448</div>
+<div class="time-cell passed">0.000642</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">And path 'albums/'+10</div>
-<div class="time-cell passed">0.002999</div>
+<div class="step-cell passed">And path 'albums/19'</div>
+<div class="time-cell passed">0.002372</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request jsonParametroComprarAlbum</div>
-<div class="time-cell passed">0.000012</div>
+<div class="time-cell passed">0.000013</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0]</div>
-<div class="time-cell passed">0.021221</div>
+<div class="time-cell passed">0.021611</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Post</div>
-<div class="time-cell passed">0.476761</div>
+<div class="time-cell passed">0.477043</div>
 </div>
-<div class="preformatted">01:25:14.290 request:
-1 &gt; POST https://nodejs-qa-training.herokuapp.com/albums/10
+<div class="preformatted">14:02:56.462 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/albums/19
 1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE1LjA2NCwiZXhwIjoxNTk5NzIwOTE1LjA2NH0.quTIZruLZZGKAbMfAaEmCJ5hgpa2oCjMgMrQW1wt1p0
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDIzNzc3LjU3MiwiZXhwIjoxNjAwMDI1NTc3LjU3Mn0.Ry0KE_f_1o5uVziJ1XaPRpg4uEyOoM4dr7K4FsKDqKo
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 2
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -305,27 +305,23 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {}
 
-01:25:14.765 response time in milliseconds: 473,88
-1 &lt; 422
+14:02:56.936 response time in milliseconds: 473,02
+1 &lt; 201
 1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 177
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 06:25:15 GMT
-1 &lt; Etag: W/"b1-GTBhEGCPP3F0c8kK/dP50SVCqqc"
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 13 Sep 2020 19:02:58 GMT
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T06:25:15.601Z"}</div>
+1 &lt; X-Powered-By: Express</div>
 <div class="step-row">
-<div class="step-cell failed">Then status 201</div>
-<div class="time-cell failed">0.000633</div>
+<div class="step-cell passed">Then status 201</div>
+<div class="time-cell passed">0.00001</div>
 </div>
-<div class="preformatted">01:25:14.765 status code was: 422, expected: 201, response time: 474, url: https://nodejs-qa-training.herokuapp.com/albums/10, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T06:25:15.601Z"}
-ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 474, url: https://nodejs-qa-training.herokuapp.com/albums/10, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T06:25:15.601Z"}</div>
 <div class="step-row">
-<div class="step-cell skipped">* print response</div>
-<div class="time-cell skipped">0</div>
+<div class="step-cell passed">* print response</div>
+<div class="time-cell passed">0.000182</div>
 </div>
+<div class="preformatted">14:02:56.936 [print]</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
@@ -333,30 +329,30 @@ ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 47
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</div>
-<div class="time-cell passed">0.000153</div>
+<div class="time-cell passed">0.000234</div>
 </div>
-<div class="preformatted">01:25:14.776 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">14:02:56.946 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* def getResponseLoguin = call read('Login.feature@FlujoExitoso')</div>
-<div class="time-cell passed">0.542988</div>
+<div class="time-cell passed">0.665277</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Login.feature</div>
-<div class="time-cell passed">0.522611</div>
+<div class="time-cell passed">0.648785</div>
 </div>
 <div class="scenario-steps-nested">
 <div class="step-row">
 <div class="step-cell passed">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</div>
-<div class="time-cell passed">0.003455</div>
+<div class="time-cell passed">0.003675</div>
 </div>
-<div class="preformatted">01:25:14.785 scenario called at line: 8 by tag: @FlujoExitoso</div>
+<div class="preformatted">14:02:56.955 scenario called at line: 8 by tag: @FlujoExitoso</div>
 <div class="step-row">
 <div class="step-cell passed">* def resource = '/users/sessions'</div>
-<div class="time-cell passed">0.000219</div>
+<div class="time-cell passed">0.000251</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonParametroLoguin =</div>
-<div class="time-cell passed">0.000249</div>
+<div class="time-cell passed">0.000247</div>
 </div>
 <div class="preformatted">{
   email: 'admin@wolox.com.ar',
@@ -364,21 +360,21 @@ ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 47
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given url (endPoint)</div>
-<div class="time-cell passed">0.000482</div>
+<div class="time-cell passed">0.000488</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And path (resource)</div>
-<div class="time-cell passed">0.00037</div>
+<div class="time-cell passed">0.000398</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request jsonParametroLoguin</div>
-<div class="time-cell passed">0.00001</div>
+<div class="time-cell passed">0.000014</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Post</div>
-<div class="time-cell passed">0.502125</div>
+<div class="time-cell passed">0.639389</div>
 </div>
-<div class="preformatted">01:25:14.793 request:
+<div class="preformatted">14:02:56.964 request:
 1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -388,77 +384,77 @@ ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 47
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {"email":"admin@wolox.com.ar","password":"candidatoWolox2020"}
 
-01:25:15.292 response time in milliseconds: 495,86
+14:02:57.602 response time in milliseconds: 636,18
 1 &lt; 200
-1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE2LjExOSwiZXhwIjoxNTk5NzIwOTE2LjExOX0.Kt9ydUcryyJzIqQM-Ax7oRiiJUqKcJMU2nbZT9WSHFo
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDIzNzc4Ljc4MywiZXhwIjoxNjAwMDI1NTc4Ljc4M30.iuzMEjFvG9MpexFNNw69wqKMcPskyBV5qE8DZ93v5z8
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 51
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 06:25:16 GMT
-1 &lt; Etag: W/"33-nsazaZbGxH1LBGfHWGskQgQWy8g"
+1 &lt; Date: Sun, 13 Sep 2020 19:02:58 GMT
+1 &lt; Etag: W/"33-koeCjBD4+2BV1oJ458f/qLdKzDU"
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{"user_id":146,"token_expires_at":"1599720916.119"}</div>
+{"user_id":146,"token_expires_at":"1600025578.783"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000033</div>
+<div class="time-cell passed">0.000011</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonLoguinBodyResponseValidate.json')</div>
-<div class="time-cell passed">0.005985</div>
+<div class="time-cell passed">0.002032</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match response == jsonBodyResposeValidate</div>
-<div class="time-cell passed">0.001018</div>
+<div class="time-cell passed">0.000187</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonHeaderResposeValidate = read('../jsons/JsonHeaderResponseValidate.json')</div>
-<div class="time-cell passed">0.006349</div>
+<div class="time-cell passed">0.001495</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match responseHeaders == jsonHeaderResposeValidate</div>
-<div class="time-cell passed">0.001389</div>
+<div class="time-cell passed">0.000211</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print response</div>
-<div class="time-cell passed">0.000928</div>
+<div class="time-cell passed">0.000386</div>
 </div>
-<div class="preformatted">01:25:15.311 [print] {
+<div class="preformatted">14:02:57.607 [print] {
   "user_id": 146,
-  "token_expires_at": "1599720916.119"
+  "token_expires_at": "1600025578.783"
 }</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonParametroComprarAlbum =</div>
-<div class="time-cell passed">0.000747</div>
+<div class="time-cell passed">0.000327</div>
 </div>
 <div class="preformatted">{
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given url (endPoint)</div>
-<div class="time-cell passed">0.000924</div>
+<div class="time-cell passed">0.000615</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And path 'albums/'+999</div>
-<div class="time-cell passed">0.00324</div>
+<div class="time-cell passed">0.003951</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request jsonParametroComprarAlbum</div>
-<div class="time-cell passed">0.000034</div>
+<div class="time-cell passed">0.000026</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0]</div>
-<div class="time-cell passed">0.000861</div>
+<div class="time-cell passed">0.000517</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Post</div>
-<div class="time-cell passed">0.407814</div>
+<div class="time-cell passed">0.387812</div>
 </div>
-<div class="preformatted">01:25:15.328 request:
+<div class="preformatted">14:02:57.620 request:
 1 &gt; POST https://nodejs-qa-training.herokuapp.com/albums/999
 1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE2LjExOSwiZXhwIjoxNTk5NzIwOTE2LjExOX0.Kt9ydUcryyJzIqQM-Ax7oRiiJUqKcJMU2nbZT9WSHFo
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDIzNzc4Ljc4MywiZXhwIjoxNjAwMDI1NTc4Ljc4M30.iuzMEjFvG9MpexFNNw69wqKMcPskyBV5qE8DZ93v5z8
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 2
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -466,41 +462,41 @@ ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 47
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {}
 
-01:25:15.734 response time in milliseconds: 404,97
+14:02:58.006 response time in milliseconds: 384,80
 1 &lt; 404
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 126
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 06:25:16 GMT
-1 &lt; Etag: W/"7e-9umiflmjYt0RAgzIndC2OLbycTM"
+1 &lt; Date: Sun, 13 Sep 2020 19:02:59 GMT
+1 &lt; Etag: W/"7e-m+ql7cYkmBcqeoEDrj4hIiUWJrM"
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{"errors":[{"code":"not_found_error","message":"Request failed with status code 404"}],"timestamp":"2020-09-10T06:25:16.574Z"}</div>
+{"errors":[{"code":"not_found_error","message":"Request failed with status code 404"}],"timestamp":"2020-09-13T19:02:59.187Z"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 404</div>
 <div class="time-cell passed">0.000009</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json')</div>
-<div class="time-cell passed">0.003692</div>
+<div class="time-cell passed">0.006533</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match response == jsonBodyResposeValidate</div>
-<div class="time-cell passed">0.000313</div>
+<div class="time-cell passed">0.000359</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print response</div>
-<div class="time-cell passed">0.000532</div>
+<div class="time-cell passed">0.000668</div>
 </div>
-<div class="preformatted">01:25:15.739 [print] {
+<div class="preformatted">14:02:58.015 [print] {
   "errors": [
     {
       "code": "not_found_error",
       "message": "Request failed with status code 404"
     }
   ],
-  "timestamp": "2020-09-10T06:25:16.574Z"
+  "timestamp": "2020-09-13T19:02:59.187Z"
 }</div>
 </div>
 <div class="scenario">
@@ -509,30 +505,30 @@ ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 47
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</div>
-<div class="time-cell passed">0.000147</div>
+<div class="time-cell passed">0.000215</div>
 </div>
-<div class="preformatted">01:25:15.746 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">14:02:58.025 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* def getResponseLoguin = call read('Login.feature@FlujoExitoso')</div>
-<div class="time-cell passed">0.516319</div>
+<div class="time-cell passed">0.552265</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Login.feature</div>
-<div class="time-cell passed">0.504003</div>
+<div class="time-cell passed">0.536883</div>
 </div>
 <div class="scenario-steps-nested">
 <div class="step-row">
 <div class="step-cell passed">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</div>
-<div class="time-cell passed">0.005622</div>
+<div class="time-cell passed">0.005539</div>
 </div>
-<div class="preformatted">01:25:15.754 scenario called at line: 8 by tag: @FlujoExitoso</div>
+<div class="preformatted">14:02:58.035 scenario called at line: 8 by tag: @FlujoExitoso</div>
 <div class="step-row">
 <div class="step-cell passed">* def resource = '/users/sessions'</div>
-<div class="time-cell passed">0.00013</div>
+<div class="time-cell passed">0.000173</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonParametroLoguin =</div>
-<div class="time-cell passed">0.000278</div>
+<div class="time-cell passed">0.000395</div>
 </div>
 <div class="preformatted">{
   email: 'admin@wolox.com.ar',
@@ -540,21 +536,21 @@ ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 47
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given url (endPoint)</div>
-<div class="time-cell passed">0.000494</div>
+<div class="time-cell passed">0.000737</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And path (resource)</div>
-<div class="time-cell passed">0.000411</div>
+<div class="time-cell passed">0.001018</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request jsonParametroLoguin</div>
-<div class="time-cell passed">0.00001</div>
+<div class="time-cell passed">0.000015</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Post</div>
-<div class="time-cell passed">0.493014</div>
+<div class="time-cell passed">0.524753</div>
 </div>
-<div class="preformatted">01:25:15.763 request:
+<div class="preformatted">14:02:58.046 request:
 1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -564,77 +560,77 @@ ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 47
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {"email":"admin@wolox.com.ar","password":"candidatoWolox2020"}
 
-01:25:16.255 response time in milliseconds: 490,14
+14:02:58.568 response time in milliseconds: 521,99
 1 &lt; 200
-1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE3LjA5MSwiZXhwIjoxNTk5NzIwOTE3LjA5MX0.zXSL9MrlEbFgctV8SKQqL6cWy9-Iu0P7IaYGlYWiUig
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDIzNzc5Ljc1MSwiZXhwIjoxNjAwMDI1NTc5Ljc1MX0.8NkZRXCipOP8Sv_OtgGgCvztvFk7yg1SDKVN3RGrtsg
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 51
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 06:25:17 GMT
-1 &lt; Etag: W/"33-VY5JJTLQDl96NiCo3q0TARtP2CI"
+1 &lt; Date: Sun, 13 Sep 2020 19:02:59 GMT
+1 &lt; Etag: W/"33-0y+kHQMeTF6i1ND0oRKzI/pdgqU"
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{"user_id":146,"token_expires_at":"1599720917.091"}</div>
+{"user_id":146,"token_expires_at":"1600025579.751"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000012</div>
+<div class="time-cell passed">0.000011</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonLoguinBodyResponseValidate.json')</div>
-<div class="time-cell passed">0.002006</div>
+<div class="time-cell passed">0.001676</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match response == jsonBodyResposeValidate</div>
-<div class="time-cell passed">0.000293</div>
+<div class="time-cell passed">0.000245</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonHeaderResposeValidate = read('../jsons/JsonHeaderResponseValidate.json')</div>
-<div class="time-cell passed">0.00124</div>
+<div class="time-cell passed">0.001772</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match responseHeaders == jsonHeaderResposeValidate</div>
-<div class="time-cell passed">0.000257</div>
+<div class="time-cell passed">0.000188</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print response</div>
-<div class="time-cell passed">0.000236</div>
+<div class="time-cell passed">0.000362</div>
 </div>
-<div class="preformatted">01:25:16.260 [print] {
+<div class="preformatted">14:02:58.573 [print] {
   "user_id": 146,
-  "token_expires_at": "1599720917.091"
+  "token_expires_at": "1600025579.751"
 }</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonParametroComprarAlbum =</div>
-<div class="time-cell passed">0.000276</div>
+<div class="time-cell passed">0.000249</div>
 </div>
 <div class="preformatted">{
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given url (endPoint)</div>
-<div class="time-cell passed">0.000521</div>
+<div class="time-cell passed">0.000515</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And path 'albums/'+6</div>
-<div class="time-cell passed">0.00175</div>
+<div class="time-cell passed">0.002141</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request jsonParametroComprarAlbum</div>
-<div class="time-cell passed">0.000011</div>
+<div class="time-cell passed">0.000012</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0]</div>
-<div class="time-cell passed">0.000336</div>
+<div class="time-cell passed">0.000386</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Post</div>
-<div class="time-cell passed">0.405422</div>
+<div class="time-cell passed">0.466617</div>
 </div>
-<div class="preformatted">01:25:16.268 request:
+<div class="preformatted">14:02:58.582 request:
 1 &gt; POST https://nodejs-qa-training.herokuapp.com/albums/6
 1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE5MTE3LjA5MSwiZXhwIjoxNTk5NzIwOTE3LjA5MX0.zXSL9MrlEbFgctV8SKQqL6cWy9-Iu0P7IaYGlYWiUig
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDIzNzc5Ljc1MSwiZXhwIjoxNjAwMDI1NTc5Ljc1MX0.8NkZRXCipOP8Sv_OtgGgCvztvFk7yg1SDKVN3RGrtsg
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 2
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -642,41 +638,41 @@ ComprarAlbum.feature:18 - status code was: 422, expected: 201, response time: 47
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {}
 
-01:25:16.671 response time in milliseconds: 402,63
+14:02:59.048 response time in milliseconds: 464,52
 1 &lt; 422
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 177
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 06:25:17 GMT
-1 &lt; Etag: W/"b1-kP62fPB1FgOOSgJZk4aUiyKfH+E"
+1 &lt; Date: Sun, 13 Sep 2020 19:03:00 GMT
+1 &lt; Etag: W/"b1-dK/u99ebsCYsGkkWo6SGhLUcgzk"
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T06:25:17.510Z"}</div>
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-13T19:03:00.228Z"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 422</div>
-<div class="time-cell passed">0.000012</div>
+<div class="time-cell passed">0.000009</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json')</div>
-<div class="time-cell passed">0.001473</div>
+<div class="time-cell passed">0.001506</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match response == jsonBodyResposeValidate</div>
-<div class="time-cell passed">0.000243</div>
+<div class="time-cell passed">0.000242</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print response</div>
-<div class="time-cell passed">0.000303</div>
+<div class="time-cell passed">0.000304</div>
 </div>
-<div class="preformatted">01:25:16.674 [print] {
+<div class="preformatted">14:02:59.050 [print] {
   "errors": [
     {
       "code": "entity_already_exists",
       "message": "Unable to create new album. The resource you are trying to create already exists"
     }
   ],
-  "timestamp": "2020-09-10T06:25:17.510Z"
+  "timestamp": "2020-09-13T19:03:00.228Z"
 }</div>
 </div>
 </div>

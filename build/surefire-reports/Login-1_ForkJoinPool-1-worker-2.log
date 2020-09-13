@@ -1,5 +1,5 @@
-02:05:55.697 scenario called at line: 8 by tag: @FlujoExitoso
-02:05:55.703 request:
+15:40:22.619 scenario called at line: 8 by tag: @FlujoExitoso
+15:40:22.625 request:
 1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -9,21 +9,22 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {"email":"admin@wolox.com.ar","password":"candidatoWolox2020"}
 
-02:05:56.227 response time in milliseconds: 524,06
+15:40:23.137 response time in milliseconds: 510,79
 1 < 200
-1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzIxNTU3LjA3OCwiZXhwIjoxNTk5NzIzMzU3LjA3OH0.RmEhBbVKT-JeXHU3XjT_NpoVOq6bYvJM4ySPAlOYoDk
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwMDI5NjI0LjM0OSwiZXhwIjoxNjAwMDMxNDI0LjM0OX0.7eqh9N3dZbBZLmorDQ93WaHWAwUx6Cq9p7NlrSkYihE
 1 < Connection: keep-alive
 1 < Content-Length: 51
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Sep 2020 07:05:57 GMT
-1 < Etag: W/"33-VPUJVbJbo02VeOBWlf6sCrcFU2s"
+1 < Date: Sun, 13 Sep 2020 20:40:24 GMT
+1 < Etag: W/"33-BIfBTRsuOZdt/w3wEKJBDJVHhhs"
 1 < Server: Cowboy
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"user_id":146,"token_expires_at":"1599723357.078"}
+{"user_id":146,"token_expires_at":"1600031424.349"}
 
-02:05:56.230 [print] {
+15:40:23.141 [print] {
   "user_id": 146,
-  "token_expires_at": "1599723357.078"
+  "token_expires_at": "1600031424.349"
 }
+
 
