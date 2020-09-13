@@ -1,0 +1,34 @@
+02:05:55.857 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+02:05:56.402 request:
+1 > POST https://nodejs-qa-training.herokuapp.com/albums/6
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzIxNTU3LjI0NSwiZXhwIjoxNTk5NzIzMzU3LjI0NX0.Fu9ntyCzLUjGgVMdPukdDKNI74J1zyQqbqU0l-Kw4NQ
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+{}
+
+02:05:56.840 response time in milliseconds: 436,66
+1 < 422
+1 < Connection: keep-alive
+1 < Content-Length: 177
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 10 Sep 2020 07:05:57 GMT
+1 < Etag: W/"b1-Fp5FexZTdFOZQK1XJ2azHegvtRQ"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new album. The resource you are trying to create already exists"}],"timestamp":"2020-09-10T07:05:57.695Z"}
+
+02:05:56.842 [print] {
+  "errors": [
+    {
+      "code": "entity_already_exists",
+      "message": "Unable to create new album. The resource you are trying to create already exists"
+    }
+  ],
+  "timestamp": "2020-09-10T07:05:57.695Z"
+}
+

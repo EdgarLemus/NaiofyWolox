@@ -1,5 +1,5 @@
-01:21:56.349 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-01:21:57.045 request:
+13:39:27.528 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+13:39:28.239 request:
 1 > POST https://nodejs-qa-training.herokuapp.com/users/sessions
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -9,48 +9,24 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {"email":"admin@wolox.com.ar","password":"candidatoWolox2020"}
 
-01:22:05.939 response time in milliseconds: 8888,88
+13:39:28.964 response time in milliseconds: 722,18
 1 < 200
-1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzE4OTI2Ljc0NSwiZXhwIjoxNTk5NzIwNzI2Ljc0NX0.CKVv3uKIwgxzRRn4uCIin3bgrJuqAC0kMtnB2pdkgRA
+1 < Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5ODQ5NTY5LjIzNywiZXhwIjoxNTk5ODUxMzY5LjIzN30.hl3dft5Gi8oEX042yTmcFrBQpLdEHs31W7iJqEnEQZQ
 1 < Connection: keep-alive
 1 < Content-Length: 51
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Sep 2020 06:22:06 GMT
-1 < Etag: W/"33-jEFr1OJaEoHjTQQqFHZ6i2+wC2w"
+1 < Date: Fri, 11 Sep 2020 18:39:29 GMT
+1 < Etag: W/"33-twkTxQVzzYdHry0vDZkUbuicdYE"
 1 < Server: Cowboy
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"user_id":146,"token_expires_at":"1599720726.745"}
+{"user_id":146,"token_expires_at":"1599851369.237"}
 
-01:22:05.968 [print] {
+13:39:28.980 [print] {
   "user_id": 146,
-  "token_expires_at": "1599720726.745"
+  "token_expires_at": "1599851369.237"
 }
 
-live"
-  ],
-  "X-Powered-By": [
-    "Express"
-  ],
-  "Authorization": [
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzA4MDM2Ljk0OSwiZXhwIjoxNTk5NzA5ODM2Ljk0OX0.ItI169lKaG-JM-mQNlCzMsPughmPLuhPzdmoUefuWSU"
-  ],
-  "Content-Type": [
-    "application/json; charset=utf-8"
-  ],
-  "Content-Length": [
-    "51"
-  ],
-  "Etag": [
-    "W/\"33-8/NqmnoUGsbTLaSo9e3RCu4TDX8\""
-  ],
-  "Date": [
-    "Thu, 10 Sep 2020 03:20:36 GMT"
-  ],
-  "Via": [
-    "1.1 vegur"
-  ]
-}
-
-rver=[Cowboy], Connection=[keep-alive], X-Powered-By=[Express], Authorization=[eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzA2ODc1LjQ5OCwiZXhwIjoxNTk5NzA4Njc1LjQ5OH0.9eKArYHH7WC8OfY-3TGXN4yPg8qQMLTouYqrzkURRiI], Content-Type=[application/json; charset=utf-8], Content-Length=[51], Etag=[W/"33-HpbRoRsH3R23OlptmU6ygxy5SNA"], Date=[Thu, 10 Sep 2020 03:01:15 GMT], Via=[1.1 vegur]}
+alive], X-Powered-By=[Express], Authorization=[eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5ODQ5NTIyLjk4MywiZXhwIjoxNTk5ODUxMzIyLjk4M30.YbuJc3N0TjL1wv2J9tt5Yr_Ao6vr8D6uS8nXmw71TQg], Content-Type=[application/json; charset=utf-8], Content-Length=[51], Etag=[W/"33-ZSx6w0eZK9SNQk1ih6Rm3z3ifvw"], Date=[Fri, 11 Sep 2020 18:38:42 GMT], Via=[1.1 vegur]}, expected: {Authorization=["#notnull"]}, reason: actual value has 8 more key(s) than expected: {Server=[Cowboy], Connection=[keep-alive], X-Powered-By=[Express], Content-Type=[application/json; charset=utf-8], Content-Length=[51], Etag=[W/"33-ZSx6w0eZK9SNQk1ih6Rm3z3ifvw"], Date=[Fri, 11 Sep 2020 18:38:42 GMT], Via=[1.1 vegur]}
+rYHH7WC8OfY-3TGXN4yPg8qQMLTouYqrzkURRiI], Content-Type=[application/json; charset=utf-8], Content-Length=[51], Etag=[W/"33-HpbRoRsH3R23OlptmU6ygxy5SNA"], Date=[Thu, 10 Sep 2020 03:01:15 GMT], Via=[1.1 vegur]}
 harset=utf-8], Content-Length=[51], Etag=[W/"33-Yqx6sTGktIGEmKnqweBXMMJCeOU"], Date=[Thu, 10 Sep 2020 02:47:18 GMT], Via=[1.1 vegur]}, NOT expected: {Authorization=["#notnull"]}, reason: all key-values did not match, actual has un-matched keys: [Server, Connection, X-Powered-By, Content-Type, Content-Length, Etag, Date, Via]

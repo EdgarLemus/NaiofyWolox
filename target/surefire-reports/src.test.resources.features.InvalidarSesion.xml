@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/resources/features/InvalidarSesion.feature" skipped="0" tests="1" time="0.908054">
+  <testcase classname="src.test.resources.features.InvalidarSesion" name="Invalidar sesion" time="0.908054">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+* def resource = 'users/sessions/invalidate_all' .......................... passed
+* def getResponseLoguin = call read('Login.feature@FlujoExitoso') ......... passed
+* def jsonParametroInvalidarSesion = ...................................... passed
+Given url (endPoint) ...................................................... passed
+And path (resource) ....................................................... passed
+And request jsonParametroInvalidarSesion .................................. passed
+And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0] . passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

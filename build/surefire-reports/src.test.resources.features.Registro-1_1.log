@@ -1,0 +1,20 @@
+12:18:50.440 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+13:11:06.895 assertion failed: path: $, actual: {email=jperez@wolox.com.ar, password=candidatoWolox2020, firstName=Juan, lastName=Perez}, NOT expected: {firstName=#? _ != ["1","2","3"]}, reason: all key-values did not match, actual has un-matched keys: [email, password, lastName]
+ttpClient/4.5.5 (Java/1.8.0_191)
+{"email":"jperez@wolox.com.ar","password":"candidatoWolox2020","firstName":"J1uan","lastName":"Perez"}
+
+13:10:58.921 response time in milliseconds: 757,57
+1 < 422
+1 < Connection: keep-alive
+1 < Content-Length: 176
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 11 Sep 2020 18:10:59 GMT
+1 < Etag: W/"b0-qZurxsxwsS7CAPQErMHaag7O25c"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-11T18:10:59.183Z"}
+
+13:10:58.923 status code was: 422, expected: 201, response time: 758, url: https://nodejs-qa-training.herokuapp.com/users/, response: {"errors":[{"code":"entity_already_exists","message":"Unable to create new user. The resource you are trying to create already exists"}],"timestamp":"2020-09-11T18:10:59.183Z"}
+}
+

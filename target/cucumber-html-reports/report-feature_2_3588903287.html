@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: src/test/resources/features/ListaAlbumes.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AutomatizacionServicios</td>
+            <td>10 Sep 2020, 02:05</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/resources/features/ListaAlbumes.feature</td>
+          <td      class="passed"    >25</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">25</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1539908400">1.539</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/resources/features/ListaAlbumes.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Listado de albumes</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.132</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>02:05:54.019 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def resource = '/albums'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getAutorizationLoguin = call read('Login.feature@FlujoExitoso')</span>
+  
+  <span class="lead-duration duration">0.574</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">Login.feature</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>02:05:54.034 scenario called at line: 8 by tag: @FlujoExitoso</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def resource = '/users/sessions'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def jsonParametroLoguin =</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>{
+  email: 'admin@wolox.com.ar',
+  password: 'candidatoWolox2020'
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url (endPoint)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path (resource)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request jsonParametroLoguin</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method Post</span>
+  
+  <span class="lead-duration duration">0.547</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>02:05:54.041 request:
+1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 62
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+{&quot;email&quot;:&quot;admin@wolox.com.ar&quot;,&quot;password&quot;:&quot;candidatoWolox2020&quot;}
+
+02:05:54.586 response time in milliseconds: 543,57
+1 &lt; 200
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzIxNTU1LjQzNywiZXhwIjoxNTk5NzIzMzU1LjQzN30.PeUG0XEQgqySWlp-jG2g2XxQXI05eAuRBz2Tw913iBo
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 10 Sep 2020 07:05:55 GMT
+1 &lt; Etag: W/&quot;33-EG/VRrN7rPrCxsDXGnNcaf4m0Ks&quot;
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{&quot;user_id&quot;:146,&quot;token_expires_at&quot;:&quot;1599723355.437&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def jsonBodyResposeValidate = read('../jsons/JsonLoguinBodyResponseValidate.json')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response == jsonBodyResposeValidate</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def jsonHeaderResposeValidate = read('../jsons/JsonHeaderResponseValidate.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match responseHeaders == jsonHeaderResposeValidate</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>02:05:54.591 [print] {
+  &quot;user_id&quot;: 146,
+  &quot;token_expires_at&quot;: &quot;1599723355.437&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.407</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Listar albumes</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url (endPoint)</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path (resource)</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = (getAutorizationLoguin).responseHeaders['Authorization'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+  
+  <span class="lead-duration duration">0.389</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>02:05:54.603 request:
+1 &gt; GET https://nodejs-qa-training.herokuapp.com/albums
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzIxNTU1LjQzNywiZXhwIjoxNTk5NzIzMzU1LjQzN30.PeUG0XEQgqySWlp-jG2g2XxQXI05eAuRBz2Tw913iBo
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nodejs-qa-training.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+
+02:05:54.988 response time in milliseconds: 384,07
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7032
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 10 Sep 2020 07:05:55 GMT
+1 &lt; Etag: W/&quot;1b78-QLaE6RpZ5E8d2hLg+o5PqJk5Zw8&quot;
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{&quot;user_id&quot;:1,&quot;id&quot;:1,&quot;title&quot;:&quot;quidem molestiae enim&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:2,&quot;title&quot;:&quot;sunt qui excepturi placeat culpa&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:3,&quot;title&quot;:&quot;omnis laborum odio&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:4,&quot;title&quot;:&quot;non esse culpa molestiae omnis sed optio&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:5,&quot;title&quot;:&quot;eaque aut omnis a&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:6,&quot;title&quot;:&quot;natus impedit quibusdam illo est&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:7,&quot;title&quot;:&quot;quibusdam autem aliquid et et quia&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:8,&quot;title&quot;:&quot;qui fuga est a eum&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:9,&quot;title&quot;:&quot;saepe unde necessitatibus rem&quot;},{&quot;user_id&quot;:1,&quot;id&quot;:10,&quot;title&quot;:&quot;distinctio laborum qui&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:11,&quot;title&quot;:&quot;quam nostrum impedit mollitia quod et dolor&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:12,&quot;title&quot;:&quot;consequatur autem doloribus natus consectetur&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:13,&quot;title&quot;:&quot;ab rerum non rerum consequatur ut ea unde&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:14,&quot;title&quot;:&quot;ducimus molestias eos animi atque nihil&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:15,&quot;title&quot;:&quot;ut pariatur rerum ipsum natus repellendus praesentium&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:16,&quot;title&quot;:&quot;voluptatem aut maxime inventore autem magnam atque repellat&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:17,&quot;title&quot;:&quot;aut minima voluptatem ut velit&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:18,&quot;title&quot;:&quot;nesciunt quia et doloremque&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:19,&quot;title&quot;:&quot;velit pariatur quaerat similique libero omnis quia&quot;},{&quot;user_id&quot;:2,&quot;id&quot;:20,&quot;title&quot;:&quot;voluptas rerum iure ut enim&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:21,&quot;title&quot;:&quot;repudiandae voluptatem optio est consequatur rem in temporibus et&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:22,&quot;title&quot;:&quot;et rem non provident vel ut&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:23,&quot;title&quot;:&quot;incidunt quisquam hic adipisci sequi&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:24,&quot;title&quot;:&quot;dolores ut et facere placeat&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:25,&quot;title&quot;:&quot;vero maxime id possimus sunt neque et consequatur&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:26,&quot;title&quot;:&quot;quibusdam saepe ipsa vel harum&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:27,&quot;title&quot;:&quot;id non nostrum expedita&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:28,&quot;title&quot;:&quot;omnis neque exercitationem sed dolor atque maxime aut cum&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:29,&quot;title&quot;:&quot;inventore ut quasi magnam itaque est fugit&quot;},{&quot;user_id&quot;:3,&quot;id&quot;:30,&quot;title&quot;:&quot;tempora assumenda et similique odit distinctio error&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:31,&quot;title&quot;:&quot;adipisci laborum fuga laboriosam&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:32,&quot;title&quot;:&quot;reiciendis dolores a ut qui debitis non quo labore&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:33,&quot;title&quot;:&quot;iste eos nostrum&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:34,&quot;title&quot;:&quot;cumque voluptatibus rerum architecto blanditiis&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:35,&quot;title&quot;:&quot;et impedit nisi quae magni necessitatibus sed aut pariatur&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:36,&quot;title&quot;:&quot;nihil cupiditate voluptate neque&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:37,&quot;title&quot;:&quot;est placeat dicta ut nisi rerum iste&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:38,&quot;title&quot;:&quot;unde a sequi id&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:39,&quot;title&quot;:&quot;ratione porro illum labore eum aperiam sed&quot;},{&quot;user_id&quot;:4,&quot;id&quot;:40,&quot;title&quot;:&quot;voluptas neque et sint aut quo odit&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:41,&quot;title&quot;:&quot;ea voluptates maiores eos accusantium officiis tempore mollitia consequatur&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:42,&quot;title&quot;:&quot;tenetur explicabo ea&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:43,&quot;title&quot;:&quot;aperiam doloremque nihil&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:44,&quot;title&quot;:&quot;sapiente cum numquam officia consequatur vel natus quos suscipit&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:45,&quot;title&quot;:&quot;tenetur quos ea unde est enim corrupti qui&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:46,&quot;title&quot;:&quot;molestiae voluptate non&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:47,&quot;title&quot;:&quot;temporibus molestiae aut&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:48,&quot;title&quot;:&quot;modi consequatur culpa aut quam soluta alias perspiciatis laudantium&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:49,&quot;title&quot;:&quot;ut aut vero repudiandae voluptas ullam voluptas at consequatur&quot;},{&quot;user_id&quot;:5,&quot;id&quot;:50,&quot;title&quot;:&quot;sed qui sed quas sit ducimus dolor&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:51,&quot;title&quot;:&quot;odit laboriosam sint quia cupiditate animi quis&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:52,&quot;title&quot;:&quot;necessitatibus quas et sunt at voluptatem&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:53,&quot;title&quot;:&quot;est vel sequi voluptatem nemo quam molestiae modi enim&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:54,&quot;title&quot;:&quot;aut non illo amet perferendis&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:55,&quot;title&quot;:&quot;qui culpa itaque omnis in nesciunt architecto error&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:56,&quot;title&quot;:&quot;omnis qui maiores tempora officiis omnis rerum sed repellat&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:57,&quot;title&quot;:&quot;libero excepturi voluptatem est architecto quae voluptatum officia tempora&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:58,&quot;title&quot;:&quot;nulla illo consequatur aspernatur veritatis aut error delectus et&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:59,&quot;title&quot;:&quot;eligendi similique provident nihil&quot;},{&quot;user_id&quot;:6,&quot;id&quot;:60,&quot;title&quot;:&quot;omnis mollitia sunt aliquid eum consequatur fugit minus laudantium&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:61,&quot;title&quot;:&quot;delectus iusto et&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:62,&quot;title&quot;:&quot;eos ea non recusandae iste ut quasi&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:63,&quot;title&quot;:&quot;velit est quam&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:64,&quot;title&quot;:&quot;autem voluptatem amet iure quae&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:65,&quot;title&quot;:&quot;voluptates delectus iure iste qui&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:66,&quot;title&quot;:&quot;velit sed quia dolor dolores delectus&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:67,&quot;title&quot;:&quot;ad voluptas nostrum et nihil&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:68,&quot;title&quot;:&quot;qui quasi nihil aut voluptatum sit dolore minima&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:69,&quot;title&quot;:&quot;qui aut est&quot;},{&quot;user_id&quot;:7,&quot;id&quot;:70,&quot;title&quot;:&quot;et deleniti unde&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:71,&quot;title&quot;:&quot;et vel corporis&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:72,&quot;title&quot;:&quot;unde exercitationem ut&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:73,&quot;title&quot;:&quot;quos omnis officia&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:74,&quot;title&quot;:&quot;quia est eius vitae dolor&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:75,&quot;title&quot;:&quot;aut quia expedita non&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:76,&quot;title&quot;:&quot;dolorem magnam facere itaque ut reprehenderit tenetur corrupti&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:77,&quot;title&quot;:&quot;cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:78,&quot;title&quot;:&quot;est minima eius possimus ea ratione velit et&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:79,&quot;title&quot;:&quot;ipsa quae voluptas natus ut suscipit soluta quia quidem&quot;},{&quot;user_id&quot;:8,&quot;id&quot;:80,&quot;title&quot;:&quot;id nihil reprehenderit&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:81,&quot;title&quot;:&quot;quibusdam sapiente et&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:82,&quot;title&quot;:&quot;recusandae consequatur vel amet unde&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:83,&quot;title&quot;:&quot;aperiam odio fugiat&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:84,&quot;title&quot;:&quot;est et at eos expedita&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:85,&quot;title&quot;:&quot;qui voluptatem consequatur aut ab quis temporibus praesentium&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:86,&quot;title&quot;:&quot;eligendi mollitia alias aspernatur vel ut iusto&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:87,&quot;title&quot;:&quot;aut aut architecto&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:88,&quot;title&quot;:&quot;quas perspiciatis optio&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:89,&quot;title&quot;:&quot;sit optio id voluptatem est eum et&quot;},{&quot;user_id&quot;:9,&quot;id&quot;:90,&quot;title&quot;:&quot;est vel dignissimos&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:91,&quot;title&quot;:&quot;repellendus praesentium debitis officiis&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:92,&quot;title&quot;:&quot;incidunt et et eligendi assumenda soluta quia recusandae&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:93,&quot;title&quot;:&quot;nisi qui dolores perspiciatis&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:94,&quot;title&quot;:&quot;quisquam a dolores et earum vitae&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:95,&quot;title&quot;:&quot;consectetur vel rerum qui aperiam modi eos aspernatur ipsa&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:96,&quot;title&quot;:&quot;unde et ut molestiae est molestias voluptatem sint&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:97,&quot;title&quot;:&quot;est quod aut&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:98,&quot;title&quot;:&quot;omnis quia possimus nesciunt deleniti assumenda sed autem&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:99,&quot;title&quot;:&quot;consectetur ut id impedit dolores sit ad ex aut&quot;},{&quot;user_id&quot;:10,&quot;id&quot;:100,&quot;title&quot;:&quot;enim repellat iste&quot;}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBodyResposeValidate = read('../jsons/JsonListaAlbumBodyResponseValidate.json')</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response == jsonBodyResposeValidate</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>02:05:55.006 [print] [
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;quidem molestiae enim&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 2,
+    &quot;title&quot;: &quot;sunt qui excepturi placeat culpa&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 3,
+    &quot;title&quot;: &quot;omnis laborum odio&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 4,
+    &quot;title&quot;: &quot;non esse culpa molestiae omnis sed optio&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 5,
+    &quot;title&quot;: &quot;eaque aut omnis a&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 6,
+    &quot;title&quot;: &quot;natus impedit quibusdam illo est&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 7,
+    &quot;title&quot;: &quot;quibusdam autem aliquid et et quia&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 8,
+    &quot;title&quot;: &quot;qui fuga est a eum&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 9,
+    &quot;title&quot;: &quot;saepe unde necessitatibus rem&quot;
+  },
+  {
+    &quot;user_id&quot;: 1,
+    &quot;id&quot;: 10,
+    &quot;title&quot;: &quot;distinctio laborum qui&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 11,
+    &quot;title&quot;: &quot;quam nostrum impedit mollitia quod et dolor&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 12,
+    &quot;title&quot;: &quot;consequatur autem doloribus natus consectetur&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 13,
+    &quot;title&quot;: &quot;ab rerum non rerum consequatur ut ea unde&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 14,
+    &quot;title&quot;: &quot;ducimus molestias eos animi atque nihil&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 15,
+    &quot;title&quot;: &quot;ut pariatur rerum ipsum natus repellendus praesentium&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 16,
+    &quot;title&quot;: &quot;voluptatem aut maxime inventore autem magnam atque repellat&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 17,
+    &quot;title&quot;: &quot;aut minima voluptatem ut velit&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 18,
+    &quot;title&quot;: &quot;nesciunt quia et doloremque&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 19,
+    &quot;title&quot;: &quot;velit pariatur quaerat similique libero omnis quia&quot;
+  },
+  {
+    &quot;user_id&quot;: 2,
+    &quot;id&quot;: 20,
+    &quot;title&quot;: &quot;voluptas rerum iure ut enim&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 21,
+    &quot;title&quot;: &quot;repudiandae voluptatem optio est consequatur rem in temporibus et&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 22,
+    &quot;title&quot;: &quot;et rem non provident vel ut&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 23,
+    &quot;title&quot;: &quot;incidunt quisquam hic adipisci sequi&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 24,
+    &quot;title&quot;: &quot;dolores ut et facere placeat&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 25,
+    &quot;title&quot;: &quot;vero maxime id possimus sunt neque et consequatur&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 26,
+    &quot;title&quot;: &quot;quibusdam saepe ipsa vel harum&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 27,
+    &quot;title&quot;: &quot;id non nostrum expedita&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 28,
+    &quot;title&quot;: &quot;omnis neque exercitationem sed dolor atque maxime aut cum&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 29,
+    &quot;title&quot;: &quot;inventore ut quasi magnam itaque est fugit&quot;
+  },
+  {
+    &quot;user_id&quot;: 3,
+    &quot;id&quot;: 30,
+    &quot;title&quot;: &quot;tempora assumenda et similique odit distinctio error&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 31,
+    &quot;title&quot;: &quot;adipisci laborum fuga laboriosam&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 32,
+    &quot;title&quot;: &quot;reiciendis dolores a ut qui debitis non quo labore&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 33,
+    &quot;title&quot;: &quot;iste eos nostrum&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 34,
+    &quot;title&quot;: &quot;cumque voluptatibus rerum architecto blanditiis&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 35,
+    &quot;title&quot;: &quot;et impedit nisi quae magni necessitatibus sed aut pariatur&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 36,
+    &quot;title&quot;: &quot;nihil cupiditate voluptate neque&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 37,
+    &quot;title&quot;: &quot;est placeat dicta ut nisi rerum iste&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 38,
+    &quot;title&quot;: &quot;unde a sequi id&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 39,
+    &quot;title&quot;: &quot;ratione porro illum labore eum aperiam sed&quot;
+  },
+  {
+    &quot;user_id&quot;: 4,
+    &quot;id&quot;: 40,
+    &quot;title&quot;: &quot;voluptas neque et sint aut quo odit&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 41,
+    &quot;title&quot;: &quot;ea voluptates maiores eos accusantium officiis tempore mollitia consequatur&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 42,
+    &quot;title&quot;: &quot;tenetur explicabo ea&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 43,
+    &quot;title&quot;: &quot;aperiam doloremque nihil&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 44,
+    &quot;title&quot;: &quot;sapiente cum numquam officia consequatur vel natus quos suscipit&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 45,
+    &quot;title&quot;: &quot;tenetur quos ea unde est enim corrupti qui&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 46,
+    &quot;title&quot;: &quot;molestiae voluptate non&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 47,
+    &quot;title&quot;: &quot;temporibus molestiae aut&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 48,
+    &quot;title&quot;: &quot;modi consequatur culpa aut quam soluta alias perspiciatis laudantium&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 49,
+    &quot;title&quot;: &quot;ut aut vero repudiandae voluptas ullam voluptas at consequatur&quot;
+  },
+  {
+    &quot;user_id&quot;: 5,
+    &quot;id&quot;: 50,
+    &quot;title&quot;: &quot;sed qui sed quas sit ducimus dolor&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 51,
+    &quot;title&quot;: &quot;odit laboriosam sint quia cupiditate animi quis&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 52,
+    &quot;title&quot;: &quot;necessitatibus quas et sunt at voluptatem&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 53,
+    &quot;title&quot;: &quot;est vel sequi voluptatem nemo quam molestiae modi enim&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 54,
+    &quot;title&quot;: &quot;aut non illo amet perferendis&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 55,
+    &quot;title&quot;: &quot;qui culpa itaque omnis in nesciunt architecto error&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 56,
+    &quot;title&quot;: &quot;omnis qui maiores tempora officiis omnis rerum sed repellat&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 57,
+    &quot;title&quot;: &quot;libero excepturi voluptatem est architecto quae voluptatum officia tempora&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 58,
+    &quot;title&quot;: &quot;nulla illo consequatur aspernatur veritatis aut error delectus et&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 59,
+    &quot;title&quot;: &quot;eligendi similique provident nihil&quot;
+  },
+  {
+    &quot;user_id&quot;: 6,
+    &quot;id&quot;: 60,
+    &quot;title&quot;: &quot;omnis mollitia sunt aliquid eum consequatur fugit minus laudantium&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 61,
+    &quot;title&quot;: &quot;delectus iusto et&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 62,
+    &quot;title&quot;: &quot;eos ea non recusandae iste ut quasi&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 63,
+    &quot;title&quot;: &quot;velit est quam&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 64,
+    &quot;title&quot;: &quot;autem voluptatem amet iure quae&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 65,
+    &quot;title&quot;: &quot;voluptates delectus iure iste qui&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 66,
+    &quot;title&quot;: &quot;velit sed quia dolor dolores delectus&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 67,
+    &quot;title&quot;: &quot;ad voluptas nostrum et nihil&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 68,
+    &quot;title&quot;: &quot;qui quasi nihil aut voluptatum sit dolore minima&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 69,
+    &quot;title&quot;: &quot;qui aut est&quot;
+  },
+  {
+    &quot;user_id&quot;: 7,
+    &quot;id&quot;: 70,
+    &quot;title&quot;: &quot;et deleniti unde&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 71,
+    &quot;title&quot;: &quot;et vel corporis&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 72,
+    &quot;title&quot;: &quot;unde exercitationem ut&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 73,
+    &quot;title&quot;: &quot;quos omnis officia&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 74,
+    &quot;title&quot;: &quot;quia est eius vitae dolor&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 75,
+    &quot;title&quot;: &quot;aut quia expedita non&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 76,
+    &quot;title&quot;: &quot;dolorem magnam facere itaque ut reprehenderit tenetur corrupti&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 77,
+    &quot;title&quot;: &quot;cupiditate sapiente maiores iusto ducimus cum excepturi veritatis quia&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 78,
+    &quot;title&quot;: &quot;est minima eius possimus ea ratione velit et&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 79,
+    &quot;title&quot;: &quot;ipsa quae voluptas natus ut suscipit soluta quia quidem&quot;
+  },
+  {
+    &quot;user_id&quot;: 8,
+    &quot;id&quot;: 80,
+    &quot;title&quot;: &quot;id nihil reprehenderit&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 81,
+    &quot;title&quot;: &quot;quibusdam sapiente et&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 82,
+    &quot;title&quot;: &quot;recusandae consequatur vel amet unde&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 83,
+    &quot;title&quot;: &quot;aperiam odio fugiat&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 84,
+    &quot;title&quot;: &quot;est et at eos expedita&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 85,
+    &quot;title&quot;: &quot;qui voluptatem consequatur aut ab quis temporibus praesentium&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 86,
+    &quot;title&quot;: &quot;eligendi mollitia alias aspernatur vel ut iusto&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 87,
+    &quot;title&quot;: &quot;aut aut architecto&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 88,
+    &quot;title&quot;: &quot;quas perspiciatis optio&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 89,
+    &quot;title&quot;: &quot;sit optio id voluptatem est eum et&quot;
+  },
+  {
+    &quot;user_id&quot;: 9,
+    &quot;id&quot;: 90,
+    &quot;title&quot;: &quot;est vel dignissimos&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 91,
+    &quot;title&quot;: &quot;repellendus praesentium debitis officiis&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 92,
+    &quot;title&quot;: &quot;incidunt et et eligendi assumenda soluta quia recusandae&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 93,
+    &quot;title&quot;: &quot;nisi qui dolores perspiciatis&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 94,
+    &quot;title&quot;: &quot;quisquam a dolores et earum vitae&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 95,
+    &quot;title&quot;: &quot;consectetur vel rerum qui aperiam modi eos aspernatur ipsa&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 96,
+    &quot;title&quot;: &quot;unde et ut molestiae est molestias voluptatem sint&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 97,
+    &quot;title&quot;: &quot;est quod aut&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 98,
+    &quot;title&quot;: &quot;omnis quia possimus nesciunt deleniti assumenda sed autem&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 99,
+    &quot;title&quot;: &quot;consectetur ut id impedit dolores sit ad ex aut&quot;
+  },
+  {
+    &quot;user_id&quot;: 10,
+    &quot;id&quot;: 100,
+    &quot;title&quot;: &quot;enim repellat iste&quot;
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

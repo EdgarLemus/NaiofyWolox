@@ -1,0 +1,43 @@
+<testsuite failures="0" name="src/test/resources/features/Login.feature" skipped="0" tests="2" time="1.974627">
+  <testcase classname="src.test.resources.features.Login" name="Loguin Exitoso" time="1.608365">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+* def resource = '/users/sessions' ........................................ passed
+* def jsonParametroLoguin = ............................................... passed
+Given url (endPoint) ...................................................... passed
+And path (resource) ....................................................... passed
+And request jsonParametroLoguin ........................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonLoguinBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* def jsonHeaderResposeValidate = read('../jsons/JsonHeaderResponseValidate.json') . passed
+And match responseHeaders == jsonHeaderResposeValidate .................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.Login" name="Loguin Exitoso" time="0.366262">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+* def resource = '/users/sessions' ........................................ passed
+* def jsonParametroLoguin = ............................................... passed
+Given url (endPoint) ...................................................... passed
+And path (resource) ....................................................... passed
+And request jsonParametroLoguin ........................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonLoguinBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* def jsonHeaderResposeValidate = read('../jsons/JsonHeaderResponseValidate.json') . passed
+And match responseHeaders == jsonHeaderResposeValidate .................... passed
+* print response .......................................................... passed
+* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+* def resource = '/users/sessions' ........................................ passed
+* def jsonParametroLoguin = ............................................... passed
+Given url (endPoint) ...................................................... passed
+And path (resource) ....................................................... passed
+And request jsonParametroLoguin ........................................... passed
+When method Post .......................................................... passed
+Then status 401 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonErrorBodyResponseValidate.json') . passed
+And match response == jsonBodyResposeValidate ............................. passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

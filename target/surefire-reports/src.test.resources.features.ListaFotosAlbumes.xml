@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/resources/features/ListaFotosAlbumes.feature" skipped="0" tests="1" time="1.973248">
+  <testcase classname="src.test.resources.features.ListaFotosAlbumes" name="Foto de album existente" time="1.973248">
+    <system-out>* def endPoint = 'https://nodejs-qa-training.herokuapp.com/' .............. passed
+* def getResponseLoguin = call read('Login.feature@FlujoExitoso') ......... passed
+* def getResponseListaAlbumes = call read('ListaAlbumes.feature') ......... passed
+Given url (endPoint) ...................................................... passed
+And path '/albums/getResponseListaAlbumes.response[3].id/photos' .......... passed
+And header Authorization = (getResponseLoguin).responseHeaders['Authorization'][0] . passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def jsonBodyResposeValidate = read('../jsons/JsonListaFotosAlbumesBodyResponseValidate.json') . passed
+And match each response == jsonBodyResposeValidate ........................ passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,96 @@
+02:05:53.975 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+02:05:54.485 request:
+1 > GET https://nodejs-qa-training.herokuapp.com/users/146/albums
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzIxNTU1LjMxMSwiZXhwIjoxNTk5NzIzMzU1LjMxMX0.wy9AQaUFFxyg252jkv-GfLnVuETlFB_bcTh6dLVU43g
+1 > Connection: Keep-Alive
+1 > Host: nodejs-qa-training.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+
+02:05:54.903 response time in milliseconds: 416,38
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 961
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 10 Sep 2020 07:05:55 GMT
+1 < Etag: W/"3c1-+jhifHTD3pk/zGiCVz7D0k1+jZs"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+[{"album":{"user_id":1,"id":1,"title":"quidem molestiae enim"},"user_id":146,"created_at":"2020-09-09T19:06:40.214Z"},{"album":{"user_id":1,"id":3,"title":"omnis laborum odio"},"user_id":146,"created_at":"2020-09-09T20:08:06.287Z"},{"album":{"user_id":1,"id":10,"title":"distinctio laborum qui"},"user_id":146,"created_at":"2020-09-10T02:06:32.196Z"},{"album":{"user_id":1,"id":5,"title":"eaque aut omnis a"},"user_id":146,"created_at":"2020-09-10T02:07:15.423Z"},{"album":{"user_id":1,"id":6,"title":"natus impedit quibusdam illo est"},"user_id":146,"created_at":"2020-09-10T02:27:19.210Z"},{"album":{"user_id":1,"id":7,"title":"quibusdam autem aliquid et et quia"},"user_id":146,"created_at":"2020-09-10T02:29:29.219Z"},{"album":{"user_id":1,"id":8,"title":"qui fuga est a eum"},"user_id":146,"created_at":"2020-09-10T04:24:07.731Z"},{"album":{"user_id":1,"id":9,"title":"saepe unde necessitatibus rem"},"user_id":146,"created_at":"2020-09-10T04:25:23.862Z"}]
+
+02:05:54.913 [print] [
+  {
+    "album": {
+      "user_id": 1,
+      "id": 1,
+      "title": "quidem molestiae enim"
+    },
+    "user_id": 146,
+    "created_at": "2020-09-09T19:06:40.214Z"
+  },
+  {
+    "album": {
+      "user_id": 1,
+      "id": 3,
+      "title": "omnis laborum odio"
+    },
+    "user_id": 146,
+    "created_at": "2020-09-09T20:08:06.287Z"
+  },
+  {
+    "album": {
+      "user_id": 1,
+      "id": 10,
+      "title": "distinctio laborum qui"
+    },
+    "user_id": 146,
+    "created_at": "2020-09-10T02:06:32.196Z"
+  },
+  {
+    "album": {
+      "user_id": 1,
+      "id": 5,
+      "title": "eaque aut omnis a"
+    },
+    "user_id": 146,
+    "created_at": "2020-09-10T02:07:15.423Z"
+  },
+  {
+    "album": {
+      "user_id": 1,
+      "id": 6,
+      "title": "natus impedit quibusdam illo est"
+    },
+    "user_id": 146,
+    "created_at": "2020-09-10T02:27:19.210Z"
+  },
+  {
+    "album": {
+      "user_id": 1,
+      "id": 7,
+      "title": "quibusdam autem aliquid et et quia"
+    },
+    "user_id": 146,
+    "created_at": "2020-09-10T02:29:29.219Z"
+  },
+  {
+    "album": {
+      "user_id": 1,
+      "id": 8,
+      "title": "qui fuga est a eum"
+    },
+    "user_id": 146,
+    "created_at": "2020-09-10T04:24:07.731Z"
+  },
+  {
+    "album": {
+      "user_id": 1,
+      "id": 9,
+      "title": "saepe unde necessitatibus rem"
+    },
+    "user_id": 146,
+    "created_at": "2020-09-10T04:25:23.862Z"
+  }
+]
+

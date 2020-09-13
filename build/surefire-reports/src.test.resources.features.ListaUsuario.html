@@ -172,34 +172,34 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</div>
-<div class="time-cell passed">0.003513</div>
+<div class="time-cell passed">0.003667</div>
 </div>
-<div class="preformatted">22:38:01.685 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">14:26:00.746 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* def resource = '/users'</div>
-<div class="time-cell passed">0.001865</div>
+<div class="time-cell passed">0.002075</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def getAutorizationLoguin = call read('Login.feature@FlujoExitoso')</div>
-<div class="time-cell passed">1.926636</div>
+<div class="time-cell passed">8.682447</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Login.feature</div>
-<div class="time-cell passed">1.878725</div>
+<div class="time-cell passed">8.654187</div>
 </div>
 <div class="scenario-steps-nested">
 <div class="step-row">
 <div class="step-cell passed">* def endPoint = 'https://nodejs-qa-training.herokuapp.com/'</div>
-<div class="time-cell passed">0.004711</div>
+<div class="time-cell passed">0.003059</div>
 </div>
-<div class="preformatted">22:38:01.738 scenario called at line: 8 by tag: @FlujoExitoso</div>
+<div class="preformatted">14:26:00.783 scenario called at line: 8 by tag: @FlujoExitoso</div>
 <div class="step-row">
 <div class="step-cell passed">* def resource = '/users/sessions'</div>
-<div class="time-cell passed">0.002411</div>
+<div class="time-cell passed">0.001825</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonParametroLoguin =</div>
-<div class="time-cell passed">0.100267</div>
+<div class="time-cell passed">0.061666</div>
 </div>
 <div class="preformatted">{
   email: 'admin@wolox.com.ar',
@@ -207,11 +207,11 @@
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given url (endPoint)</div>
-<div class="time-cell passed">0.003059</div>
+<div class="time-cell passed">0.003022</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And path (resource)</div>
-<div class="time-cell passed">0.002512</div>
+<div class="time-cell passed">0.002722</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request jsonParametroLoguin</div>
@@ -219,9 +219,9 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Post</div>
-<div class="time-cell passed">1.752916</div>
+<div class="time-cell passed">8.568947</div>
 </div>
-<div class="preformatted">22:38:02.542 request:
+<div class="preformatted">14:26:01.479 request:
 1 &gt; POST https://nodejs-qa-training.herokuapp.com/users/sessions
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -231,102 +231,129 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 {"email":"admin@wolox.com.ar","password":"candidatoWolox2020"}
 
-22:38:03.607 response time in milliseconds: 1062,40
+14:26:09.425 response time in milliseconds: 7944,13
 1 &lt; 200
-1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzA5MDg0LjMzOCwiZXhwIjoxNTk5NzEwODg0LjMzOH0.pCW6P869_B2h4hojtYdHNtSFKBWCbqhdIz-Cwt6EWFs
+1 &lt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5ODUyMzY5LjcwOCwiZXhwIjoxNTk5ODU0MTY5LjcwOH0.iECq0MfzftYOjhiRvz4JcYDx9pKJJgKYKXcUVc4ScWg
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 51
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 03:38:04 GMT
-1 &lt; Etag: W/"33-a5e2dZUwqrzRBJJxpUudjKRQTM4"
+1 &lt; Date: Fri, 11 Sep 2020 19:26:09 GMT
+1 &lt; Etag: W/"33-eRN+ROQbjFtW7vLYDXjc3UUR5JI"
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{"user_id":146,"token_expires_at":"1599710884.338"}</div>
+{"user_id":146,"token_expires_at":"1599854169.708"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
 <div class="time-cell passed">0.000016</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonLoguinBodyResponseValidate.json')</div>
-<div class="time-cell passed">0.005378</div>
+<div class="time-cell passed">0.005706</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match response == jsonBodyResposeValidate</div>
-<div class="time-cell passed">0.002032</div>
+<div class="time-cell passed">0.001935</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def jsonHeaderResposeValidate = read('../jsons/JsonHeaderResponseValidate.json')</div>
-<div class="time-cell passed">0.004389</div>
+<div class="time-cell passed">0.004234</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match responseHeaders == jsonHeaderResposeValidate</div>
-<div class="time-cell passed">0.000388</div>
+<div class="time-cell passed">0.000476</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print response</div>
-<div class="time-cell passed">0.000619</div>
+<div class="time-cell passed">0.000552</div>
 </div>
-<div class="preformatted">22:38:03.622 [print] {
+<div class="preformatted">14:26:09.441 [print] {
   "user_id": 146,
-  "token_expires_at": "1599710884.338"
+  "token_expires_at": "1599854169.708"
 }</div>
 </div>
 <div class="step-row">
+<div class="step-cell passed">* def json =</div>
+<div class="time-cell passed">0.000382</div>
+</div>
+<div class="preformatted">{
+  "page": [],
+  "count": "#number",
+  "limit": "#number",
+  "offset": "#number",
+  "total_pages": "#number",
+  "total_count": "#number",
+  "previous_page": "#number",
+  "current_page": "#number",
+  "next_page": "#number",
+  "previous_page_link": "##string",
+  "current_page_link": "##string",
+  "next_page_link": "##string",
+  "first_page_link": "##string",
+  "last_page_link": "##string",
+  "n_page_link": "##string"
+}</div>
+<div class="step-row">
 <div class="step-cell passed">Given url (endPoint)</div>
-<div class="time-cell passed">0.000478</div>
+<div class="time-cell passed">0.000772</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And path (resource)</div>
-<div class="time-cell passed">0.000308</div>
+<div class="time-cell passed">0.000633</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And header Authorization = (getAutorizationLoguin).responseHeaders['Authorization'][0]</div>
-<div class="time-cell passed">0.021476</div>
+<div class="time-cell passed">0.025732</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Get</div>
-<div class="time-cell passed">0.629802</div>
+<div class="time-cell passed">0.396812</div>
 </div>
-<div class="preformatted">22:38:03.655 request:
+<div class="preformatted">14:26:09.478 request:
 1 &gt; GET https://nodejs-qa-training.herokuapp.com/users
 1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5NzA5MDg0LjMzOCwiZXhwIjoxNTk5NzEwODg0LjMzOH0.pCW6P869_B2h4hojtYdHNtSFKBWCbqhdIz-Cwt6EWFs
+1 &gt; Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjE0Niwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTk5ODUyMzY5LjcwOCwiZXhwIjoxNTk5ODU0MTY5LjcwOH0.iECq0MfzftYOjhiRvz4JcYDx9pKJJgKYKXcUVc4ScWg
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: nodejs-qa-training.herokuapp.com
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 
-22:38:04.283 response time in milliseconds: 626,71
+14:26:09.872 response time in milliseconds: 392,76
 1 &lt; 200
 1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 400
+1 &lt; Content-Length: 1029
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 10 Sep 2020 03:38:05 GMT
-1 &lt; Etag: W/"190-fZ0Sj1//Iqws/Rxi7FYO8enQg4g"
+1 &lt; Date: Fri, 11 Sep 2020 19:26:10 GMT
+1 &lt; Etag: W/"405-/ljzDsEK0crpl/hTbCMQLgOzV3c"
 1 &lt; Server: Cowboy
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{"total_count":3,"count":3,"total_pages":1,"limit":10,"offset":0,"current_page":1,"page":[{"first_name":"regular","last_name":"regular","email":"regular@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Perez","email":"jperez@wolox.com.ar","role":"regular"},{"first_name":"admin","last_name":"admin","email":"admin@wolox.com.ar","role":"admin"}],"previous_page":null,"next_page":null}</div>
+{"total_count":21,"count":10,"total_pages":3,"limit":10,"offset":0,"current_page":1,"page":[{"first_name":"Hernan","last_name":"Garcia","email":"h6@wolox.com.ar","role":"regular"},{"first_name":"regular","last_name":"regular","email":"regular@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Perez","email":"jperez@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h7@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Per2ez","email":"jperwez@wolox.com.ar","role":"regular"},{"first_name":"Ju4an","last_name":"Per2ez","email":"jperwetz@wolox.com.ar","role":"regular"},{"first_name":"45543","last_name":"Per2ez","email":"jpterwetz@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h78@wolox.com.ar","role":"regular"},{"first_name":"admin","last_name":"admin","email":"admin@wolox.com.ar","role":"admin"},{"first_name":"Hernan","last_name":"Garcia","email":"h@wolox.com.ar","role":"regular"}],"previous_page":null,"next_page":2}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000026</div>
+<div class="time-cell passed">0.000012</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonListaUsuarioBodyResponseValidate.json')</div>
-<div class="time-cell passed">0.004739</div>
+<div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonUsuarioBodyResponseValidate.json')</div>
+<div class="time-cell passed">0.005916</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print response</div>
-<div class="time-cell passed">0.000989</div>
+<div class="time-cell passed">0.002112</div>
 </div>
-<div class="preformatted">22:38:04.289 [print] {
-  "total_count": 3,
-  "count": 3,
-  "total_pages": 1,
+<div class="preformatted">14:26:09.881 [print] {
+  "total_count": 21,
+  "count": 10,
+  "total_pages": 3,
   "limit": 10,
   "offset": 0,
   "current_page": 1,
   "page": [
+    {
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h6@wolox.com.ar",
+      "role": "regular"
+    },
     {
       "first_name": "regular",
       "last_name": "regular",
@@ -340,19 +367,65 @@
       "role": "regular"
     },
     {
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h7@wolox.com.ar",
+      "role": "regular"
+    },
+    {
+      "first_name": "Juan",
+      "last_name": "Per2ez",
+      "email": "jperwez@wolox.com.ar",
+      "role": "regular"
+    },
+    {
+      "first_name": "Ju4an",
+      "last_name": "Per2ez",
+      "email": "jperwetz@wolox.com.ar",
+      "role": "regular"
+    },
+    {
+      "first_name": "45543",
+      "last_name": "Per2ez",
+      "email": "jpterwetz@wolox.com.ar",
+      "role": "regular"
+    },
+    {
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h78@wolox.com.ar",
+      "role": "regular"
+    },
+    {
       "first_name": "admin",
       "last_name": "admin",
       "email": "admin@wolox.com.ar",
       "role": "admin"
+    },
+    {
+      "first_name": "Hernan",
+      "last_name": "Garcia",
+      "email": "h@wolox.com.ar",
+      "role": "regular"
     }
   ],
   "previous_page": null,
-  "next_page": null
+  "next_page": 2
 }</div>
 <div class="step-row">
-<div class="step-cell passed">And match response == jsonBodyResposeValidate</div>
-<div class="time-cell passed">0.000723</div>
+<div class="step-cell passed">And match each response.page[*] == jsonBodyResposeValidate</div>
+<div class="time-cell passed">0.001322</div>
 </div>
+<div class="step-row">
+<div class="step-cell passed">* def jsonBodyResposeValidate = read('../jsons/JsonListaUsuarioBodyResponseValidate.json')</div>
+<div class="time-cell passed">0.005784</div>
+</div>
+<div class="step-row">
+<div class="step-cell failed">And match response == jsonBodyResposeValidate</div>
+<div class="time-cell failed">0.001208</div>
+</div>
+<div class="preformatted">14:26:09.889 assertion failed: path: $.page, actual: [{"first_name":"Hernan","last_name":"Garcia","email":"h6@wolox.com.ar","role":"regular"},{"first_name":"regular","last_name":"regular","email":"regular@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Perez","email":"jperez@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h7@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Per2ez","email":"jperwez@wolox.com.ar","role":"regular"},{"first_name":"Ju4an","last_name":"Per2ez","email":"jperwetz@wolox.com.ar","role":"regular"},{"first_name":"45543","last_name":"Per2ez","email":"jpterwetz@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h78@wolox.com.ar","role":"regular"},{"first_name":"admin","last_name":"admin","email":"admin@wolox.com.ar","role":"admin"},{"first_name":"Hernan","last_name":"Garcia","email":"h@wolox.com.ar","role":"regular"}], expected: '[] schema', reason: actual value is not a string
+ListaUsuario.feature:38 - path: $.page, actual: [{"first_name":"Hernan","last_name":"Garcia","email":"h6@wolox.com.ar","role":"regular"},{"first_name":"regular","last_name":"regular","email":"regular@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Perez","email":"jperez@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h7@wolox.com.ar","role":"regular"},{"first_name":"Juan","last_name":"Per2ez","email":"jperwez@wolox.com.ar","role":"regular"},{"first_name":"Ju4an","last_name":"Per2ez","email":"jperwetz@wolox.com.ar","role":"regular"},{"first_name":"45543","last_name":"Per2ez","email":"jpterwetz@wolox.com.ar","role":"regular"},{"first_name":"Hernan","last_name":"Garcia","email":"h78@wolox.com.ar","role":"regular"},{"first_name":"admin","last_name":"admin","email":"admin@wolox.com.ar","role":"admin"},{"first_name":"Hernan","last_name":"Garcia","email":"h@wolox.com.ar","role":"regular"}], expected: '[] schema', reason: actual value is not a string</div>
 </div>
 </div>
 </body>
